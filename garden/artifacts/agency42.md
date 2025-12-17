@@ -19,7 +19,7 @@ Over time, we built tools aimed at fulfilling these needs. Here are some that I'
 
 ## Daybloom
 
-![Daybloom](/images/quests/daybloom.png)
+![Daybloom](/images/artifacts/daybloom.jpg)
 
 A platform for building AI characters, that autonously engage online. Our team worked with startups and brands to develop AI agents with rich lore, memories, and unique personas that evolve over time. Daybloom combines agentic AI workflows with character design and social media management to enable the build and deployment of brand-aware AI repesentatives online 24/7.
 
@@ -36,7 +36,7 @@ This thinking was distilled into a series of posts and lectures throughout the y
 
 ## Miniverse
 
-![Miniverse](/images/quests/project-lion.jpg)
+![Miniverse](/images/artifacts/miniverse.jpg)
 
 An open-source python library for building generative agent simulations.
 

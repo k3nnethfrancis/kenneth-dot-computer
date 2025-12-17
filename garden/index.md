@@ -17,6 +17,12 @@ title: home
 .blog-icon-link:hover svg {
   stroke: #dc322f;
 }
+.social-links a svg {
+  transition: stroke 0.2s ease;
+}
+.social-links a:hover svg {
+  stroke: #dc322f;
+}
 </style>
 
 <div class="profile-section">
@@ -43,24 +49,21 @@ title: home
 
 ---
 
-I'm an industrial psychologist working in applied AI.
+I'm an industrial psychologist working in applied AI. 
 
-Previously, I led people analytics at SpaceX before founding [Agency42](/artifacts/agency42).
+Currently, I support GTM at [Glean](https://www.glean.com/) by driving AI strategy and agent design for enterprise customers. Previously, I led people analytics at SpaceX before founding [Agency42](/artifacts/agency42).
 
-As part of the field team at Glean, I embed with customers to help them execute their AI strategy.
+This website is a living repository of my work.
 
-As a psychologist by training, my research interests lie at the intersection of [machine psychology](https://arxiv.org/pdf/2303.13988) and organizational science. 
-
-This blog serves as a repository of ideas and lessons learned over the years.
-
-*Shoshin (初心)* is the Zen Buddhist's term for *"beginner's mind"*. It is my reminder to embody humility and curiosity in everything I do.
+It contains a [blog](/blog) that I occasionally write to, a collection of [artifacts](/artifacts) from previous adventures, and a graph of [notes](/notes) on topics like [machine psychology](/notes/machine-psychology/), [agent simulations](/notes/agent-simulations) and other areas of [cybernetics](/notes/cybernetics).
 
 ---
 
-## <a href="/blog" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Posts**
+## <a href="/blog" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Essays**
 
-- [BM25 is all you need](/blog/bm25-is-all-you-need)
+- [The cybernetic organization](/blog/cybernetic-organization)
+- [From tool AIs to agents](/blog/from-tool-ais-to-agents)
 - [On taking GPT-4 out of the box](/blog/on-taking-gpt4-out-of-the-box)
-- [The extended mind](/blog/extended-mind)
+- [Work systems and the extended mind](/blog/extended-mind)
 
 <!-- [read more →](/blog) -->

@@ -1,8 +1,8 @@
 ---
-title: Notes
+title: notes
 ---
 
-# Notes
+# notes
 
 Traces of thinking in progress.
 
