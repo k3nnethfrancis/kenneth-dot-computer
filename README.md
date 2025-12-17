@@ -34,6 +34,9 @@ kenneth-dot-computer/
 │   ├── index.md     ← Home page
 │   ├── blog/        ← Blog posts
 │   ├── artifacts/   ← Project pages
+│   ├── notes/       ← Research notes
+│   │   ├── research-log/
+│   │   └── machine-psychology/
 │   └── images/
 └── quartz/          ← Quartz (git submodule)
 ```
