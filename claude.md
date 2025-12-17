@@ -35,13 +35,35 @@ garden/
 │   ├── index.md    ← Blog listing
 │   └── *.md        ← Individual posts
 ├── artifacts/
-│   ├── index.md    ← Projects listing  
+│   ├── index.md    ← Projects listing
 │   └── *.md        ← Project pages (agency42, talentdao, noometic)
+├── notes/
+│   ├── index.md    ← Notes overview
+│   ├── research-log/
+│   │   ├── index.md
+│   │   └── YYYY-MM-DD.md  ← Dated research entries
+│   └── machine-psychology/
+│       └── *.md    ← Topic pages (psych, hexaco-personality-profiles, etc.)
 └── images/
     ├── pfp/        ← Profile pictures
     ├── posts/      ← Blog post images
-    └── quests/     ← Project images
+    └── artifacts/  ← Project images
 ```
+
+## Tagging System
+
+Research pages use `tags` in frontmatter:
+
+| Tag | Description |
+|-----|-------------|
+| `machine-psychology` | Behavioral study of LLMs using psychological methods |
+| `psychometrics` | Personality measurement, HEXACO profiling |
+
+## Deployment
+
+GitHub Pages via GitHub Actions (`.github/workflows/deploy.yml`).
+
+Triggers on push to `main`. Requires GitHub repo Settings → Pages → Source set to "GitHub Actions".
 
 ## Original Blog Reference
 
