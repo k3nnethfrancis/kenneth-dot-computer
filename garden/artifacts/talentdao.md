@@ -1,5 +1,11 @@
 ---
 title: talentDAO
+date: 2022-06-15
+tags:
+  - web3
+  - daos
+  - org-science
+  - open-source
 ---
 
 # talentDAO
@@ -19,4 +25,4 @@ An open-source initiative to build AI tooling for DAOs. Ambitiously sketched in 
 
 - [Project overview & vision](https://project-lion-ai.github.io/hello-world/)
 - [LLM people analytics notebooks](https://github.com/Project-LION-AI/lionOS)
-- [Leo Discord agent (GPT-4)](https://github.com/Project-LION-AI/leo)
+- [Leo Discord agent (GPT-3.5)](https://github.com/Project-LION-AI/leo)

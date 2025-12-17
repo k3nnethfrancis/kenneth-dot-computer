@@ -1,5 +1,10 @@
 ---
 title: Noometic AI
+date: 2023-11-10
+tags:
+  - ai
+  - search
+  - vector-databases
 ---
 
 # Noometic AI

@@ -1,5 +1,10 @@
 ---
 title: Agency/42
+date: 2025-11-15
+tags:
+  - ai
+  - startups
+  - digital-minds
 ---
 
 # Agency/42
