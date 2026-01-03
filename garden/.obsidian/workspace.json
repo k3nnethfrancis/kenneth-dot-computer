@@ -1,0 +1,197 @@
+{
+  "main": {
+    "id": "389f521b560d6610",
+    "type": "split",
+    "children": [
+      {
+        "id": "af94dcb07fea2796",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "950e5c434dc13c20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "notes/machine-psychology/jailbreaking.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "jailbreaking"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "cc6bca716ed6e77c",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bb8eb35ba725c63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6e304af45378f64f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0a25ef6d6760f1e6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "28872ced23b8c83e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "757eecff8547a016",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf58fb132fed7193",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3e7942de3688a08c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "notes/machine-psychology/jailbreaking.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for jailbreaking"
+            }
+          },
+          {
+            "id": "a5a4d80d7c01a220",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "notes/machine-psychology/jailbreaking.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from jailbreaking"
+            }
+          },
+          {
+            "id": "ea93eba9a99a4366",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8be6afd060bd68a0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "87972e4a883c5a13",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "notes/machine-psychology/jailbreaking.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of jailbreaking"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "950e5c434dc13c20",
+  "lastOpenFiles": [
+    "notes/cybernetics/functionalism.md",
+    "notes/machine-psychology/llm-as-judge.md",
+    "notes/machine-psychology/index.md",
+    "notes/machine-psychology/hexaco-personality-profiles.md",
+    "notes/machine-psychology/hexaco-predictive-validity.md",
+    "notes/research-log/2025-12-28.md",
+    "notes/research-log/2025-12-10.md",
+    "notes/research-log/2025-12-14.md"
+  ]
+}

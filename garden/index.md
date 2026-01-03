@@ -49,13 +49,11 @@ title: home
 
 ---
 
-I'm an industrial psychologist working in applied AI. 
-
-Currently, I support GTM at [Glean](https://www.glean.com/) by driving AI strategy and agent design for enterprise customers. Previously, I led people analytics at SpaceX before founding [Agency42](/artifacts/agency42).
+I'm an industrial psychologist working in applied AI at Glean. I help drive AI strategy and agent design for enterprise customers. Previously, I led people analytics at SpaceX before founding [Agency42](/artifacts/agency42).
 
 This website is a living repository of my work.
 
-It contains a [blog](/blog) that I occasionally write to, a collection of [artifacts](/artifacts) from previous adventures, and a graph of [notes](/notes) on topics like [machine psychology](/notes/machine-psychology/), [agent simulations](/notes/agent-simulations) and other areas of [cybernetics](/notes/cybernetics).
+It contains a [blog](/blog) that I occasionally write to, a collection of [artifacts](/artifacts) from previous adventures, and a graph of [research notes](/research) on topics like [machine psychology](/research/machine-psychology/), [agent simulations](/research/archives/agent-simulations) and other areas of [cybernetics](/research/cybernetics).
 
 ---
 
