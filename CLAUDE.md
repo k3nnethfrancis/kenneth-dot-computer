@@ -46,30 +46,23 @@ garden/
 garden/
 ├── index.md              ← Home page
 ├── blog/                 ← Published posts
-├── artifacts/            ← Project pages (agency42, noometic, etc.)
-├── notes/
-│   ├── index.md          ← Notes overview
-│   ├── research-log/     ← Dated entries tracking research arc
-│   ├── machine-psychology/
-│   │   ├── index.md      ← Topic overview
-│   │   ├── psych.md      ← Psych framework design
-│   │   ├── sigmund.md    ← Sigmund architecture
-│   │   └── *.md          ← Topic pages
-│   ├── cybernetics/      ← Systems thinking notes
-│   └── agent-simulations/
+├── research/             ← Research notes (symlinked from shoshin-codex)
+│   ├── index.md          ← Research questions overview
+│   ├── logs/             ← Dated entries tracking research arc
+│   ├── artifacts/        ← Things built (Miniverse, Sigmund, experiments)
+│   └── notes/            ← Lit reviews, methodology, theory
 └── images/
 ```
 
 ## Current Research (Reference)
 
-### Machine Psychology
+### Research Questions
 
-Applying I/O psychology methods to LLMs. Key questions:
-- Do psychometric profiles (HEXACO) predict LLM behavior?
-- How do profiles shift with conversation context?
-- Can we infer profiles from conversation alone? (Sigmund)
+1. **RQ1**: How do humans understand and stay in control of multi-agent AI systems?
+2. **RQ2**: Can models learn to reason reliably about psychological states?
+3. **RQ3**: Can reasoning models learn to model psychometrics?
 
-Active code: `/Users/kenneth/Desktop/lab/projects/research/psych-eval/`
+Active code: `/Users/kenneth/Desktop/lab/projects/research/`
 
 ---
 
@@ -120,14 +113,14 @@ tags:
 [Content...]
 ```
 
-Update `garden/notes/research-log/index.md` to include new entries.
+Update `garden/research/logs/index.md` to include new entries.
 
 ### Tags
 
 | Tag | Description |
 |-----|-------------|
 | `machine-psychology` | Behavioral study of LLMs via psychological methods |
-| `psychometrics` | Personality measurement, HEXACO profiling |
+| `research` | Research arc content |
 | `cybernetics` | Systems thinking, feedback loops, requisite variety |
 
 ---
