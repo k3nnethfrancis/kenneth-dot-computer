@@ -28,8 +28,7 @@ title: home
 <div class="profile-section">
   <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image" />
   <div class="profile-info">
-    <h1>> ken_</h1>
-    <p class="subtitle">i/o psychologist · ai developer</p>
+    <h1>> kenneth</h1>
     <div class="social-links">
       <a href="/blog" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -40,8 +39,8 @@ title: home
       <a href="https://x.com/local0ptimist" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
       </a>
-      <a href="https://agency42.co" target="_blank" rel="noopener noreferrer" aria-label="Agency">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+      <a href="/index.xml" aria-label="RSS Feed" style="text-decoration: none; background: none; border: none;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
       </a>
     </div>
   </div>
@@ -49,13 +48,25 @@ title: home
 
 ---
 
-I'm an industrial psychologist working in applied AI. 
+I'm kenneth cavanagh, local 0ptomist and amateur machine psychologist studying human-AI coorination in the field.
 
-Currently, I support GTM at [Glean](https://www.glean.com/) by driving AI strategy and agent design for enterprise customers. Previously, I led people analytics at SpaceX before founding [Agency42](/artifacts/agency42).
+I spend my days with customers at Glean, working on AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and redirecting agent swarms mapping the frontier.
 
-This website is a living repository of my work.
+Before machines, I focused on humans. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint teaching sociotechnical theory as an adjunct.
 
-It contains a [blog](/blog) that I occasionally write to, a collection of [artifacts](/artifacts) from previous adventures, and a graph of [notes](/notes) on topics like [machine psychology](/notes/machine-psychology/), [agent simulations](/notes/agent-simulations) and other areas of [cybernetics](/notes/cybernetics).
+I didn't last very long in academia. By 2021 I moved to California to work for SpaceX, where I led people analytics and research initiatives as a small unit within our corporate operations engineering department. During that time, I got into building software. By the end of 2024 I left to focus full-time on applied AI. 
+
+In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators, artists and celebrities across LA and it's community of cyberpunks racing towards the augmented frontier.
+
+My work today sits at the intersection of [cybernetics](/research/notes/cybernetics) and [machine psychology](/research/notes/machine-psychology), which you can read more about in my [notes](/research). I try to work in public so that others can learn from and critique my work. I've also started keeping a [log](/research/logs/), which documents more of the raw thinking and experiments that go into it. Sometimes, I write essays and reflections in my [blog](/blog), which I've been doing sporadically since 2021.
+
+To get my latest thinking, you can subscribe to my [substack](https://local0ptimist.substack.com) or hook your agents up to my [RSS feed](/index.xml). 
+
+The best way to get in touch is by engaging with me on [X](https://x.com/local0ptimist). I'm always looking for new collaborators and compute sponsors.
+
+To those builders out there in the arena, just rememeber, when the g-forces of acceleration are pulling you back into the noosphere, the only way out is through.
+
+Stay optimistic, friends.
 
 ---
 
@@ -65,5 +76,3 @@ It contains a [blog](/blog) that I occasionally write to, a collection of [artif
 - [From tool AIs to agents](/blog/from-tool-ais-to-agents)
 - [On taking GPT-4 out of the box](/blog/on-taking-gpt4-out-of-the-box)
 - [Work systems and the extended mind](/blog/extended-mind)
-
-<!-- [read more →](/blog) -->

@@ -106,3 +106,7 @@ The organizations that thrive in the future will be thinking deeply about how AI
 ---
 
 *Co-written with Rob Renn. Originally published on [agency42.co](https://www.agency42.co/blog/the-cybernetic-organization)*
+
+---
+
+*See also*: [[/research/artifacts/cybernetics|Cybernetics (Research Notes)]]
