@@ -28,7 +28,7 @@ title: home
 <div class="profile-section">
   <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image" />
   <div class="profile-info">
-    <h1>> kenneth_</h1>
+    <h1>> local0ptimist</h1>
     <p class="subtitle">i/o psychologist · ai developer</p>
     <div class="social-links">
       <a href="/blog" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
@@ -49,11 +49,9 @@ title: home
 
 ---
 
-I'm kenneth cavanagh.
-
 I study human-AI coorination at the frontier.
 
-I hold a day job at Glean where I work with customers on AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and redirecting agent swarms mapping the frontier.
+I work in the field at Glean by day, helping customers with AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and orchestrating agent swarms for mapping the territory.
 
 Before machines, I focused on humans. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint teaching sociotechnical theory as an adjunct.
 
@@ -70,6 +68,8 @@ The best way to get in touch is by engaging with me on [X](https://x.com/local0p
 To those builders out there in the arena, just rememeber, when the g-forces of acceleration are pulling you back into the noosphere, the only way out is through.
 
 Stay optimistic, friends.
+
+— Kenneth Cavanagh
 
 ---
 
