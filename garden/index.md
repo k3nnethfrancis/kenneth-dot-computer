@@ -50,7 +50,7 @@ title: home
 
 I'm kenneth cavanagh, local 0ptomist and amateur machine psychologist studying human-AI coorination in the field.
 
-I spend my days at Glean, working on AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and redirecting agent swarms mapping the frontier.
+I spend my days with customers at Glean, working on AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and redirecting agent swarms mapping the frontier.
 
 Before machines, I focused on humans. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint teaching sociotechnical theory as an adjunct.
 
