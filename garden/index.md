@@ -1,5 +1,5 @@
 ---
-title: home
+title: kenneth.computer
 ---
 
 <style>
@@ -51,7 +51,7 @@ title: home
 
 I study human-AI coorination at the frontier.
 
-I work in the field at Glean by day, helping customers with AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and orchestrating agent swarms for mapping the territory.
+By day, I support GTM at Glean, helping customers with adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and orchestrating agent swarms mapping the territory of the field.
 
 Before machines, I focused on humans. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint teaching sociotechnical theory as an adjunct.
 
