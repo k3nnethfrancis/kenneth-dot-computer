@@ -28,7 +28,8 @@ title: home
 <div class="profile-section">
   <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image" />
   <div class="profile-info">
-    <h1>> kenneth</h1>
+    <h1>> kenneth_</h1>
+    <p class="subtitle">i/o psychologist · ai developer</p>
     <div class="social-links">
       <a href="/blog" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
