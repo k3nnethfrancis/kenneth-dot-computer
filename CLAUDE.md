@@ -15,28 +15,60 @@ For deep research collaboration, Kenneth works with Shoshin in `/Users/kenneth/D
 
 ## Status
 
-### Git Tracking
-- **This repo** - GitHub (k3nnethfrancis/kenneth-dot-computer)
-- **quartz/** - Submodule (k3nnethfrancis/quartz)
+### Git Tracking (Three Repos)
 
-### Symlink Setup (ACTIVE)
-`garden/notes/` is a symlink to `shoshin-codex/garden/notes/`. This means:
-- Edit notes in shoshin-codex, they appear here automatically
-- `draft: true` frontmatter prevents publishing (Quartz filters drafts)
-- Other garden content (blog/, artifacts/, index.md) is native to this repo
+| Repo | Location | Remote |
+|------|----------|--------|
+| kenneth-dot-computer | This repo | GitHub (k3nnethfrancis/kenneth-dot-computer) |
+| quartz | Submodule at `quartz/` | GitHub (k3nnethfrancis/quartz), branch `v4` |
+| shoshin-codex | `../shoshin-codex/` | GitHub (k3nnethfrancis/shoshin-codex), private |
 
+### Local Development
+
+`garden/research/` is a symlink to `shoshin-codex/garden/research/`. Edit research in shoshin-codex, see changes locally via symlink.
+
+### Deployment
+
+GitHub Actions (`.github/workflows/deploy.yml`) does a multi-repo checkout:
+1. Checks out kenneth-dot-computer
+2. Checks out shoshin-codex (via `SHOSHIN_CODEX_TOKEN` secret)
+3. Copies `vault/garden/research/` to `garden/research/`
+4. Builds with Quartz
+
+This means the symlink works locally but deployment pulls fresh from shoshin-codex.
+
+### Commit Workflows
+
+**Site content/config changes** (garden/, quartz config):
+```bash
+# In kenneth-dot-computer
+git add . && git commit -m "message" && git push
+# → Auto-deploys via GitHub Actions
 ```
-garden/
-├── notes/     → symlink to shoshin-codex/garden/notes/
-├── blog/      → native to this repo
-├── artifacts/ → native to this repo
-└── index.md   → native to this repo
+
+**Research content changes** (shoshin-codex/garden/research/):
+```bash
+# In shoshin-codex
+git add . && git commit -m "message" && git push
+# Then trigger deploy: push to kenneth-dot-computer OR manually run workflow
+```
+
+**Quartz customizations** (styles, components, layout):
+```bash
+# 1. Commit in submodule
+cd quartz
+git add . && git commit -m "message" && git push origin v4
+
+# 2. Update parent's reference
+cd ..
+git add quartz && git commit -m "update quartz" && git push
+# → Auto-deploys
 ```
 
 ### Publishing Protocol
-- **Notes**: Edit in shoshin-codex/garden/notes/, appears here via symlink
-- **Blog/Artifacts**: Edit directly here
-- Use `draft: true` in frontmatter to hide content from publishing
+- **Research**: Edit in shoshin-codex/garden/research/, push both repos
+- **Blog/Homepage**: Edit directly here, push
+- Use `draft: true` in frontmatter to hide content
 
 ---
 
