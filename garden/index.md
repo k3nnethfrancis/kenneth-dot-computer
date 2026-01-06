@@ -49,11 +49,11 @@ title: kenneth.computer
 
 ---
 
-I study human-AI coorination at the frontier.
+I'm focused on human-AI coordination in the field.
 
-By day, I support GTM at Glean, helping customers with AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and orchestrating agent swarms mapping the territory of the field.
+By day, I support GTM at Glean, helping customers with AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and orchestrating agent swarms mapping the frontier.
 
-Before machines, I focused on humans. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint teaching sociotechnical theory as an adjunct.
+My work has always centered around the interplay between people and technology. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I also had a brief stint as an adjunct, teaching sociotechnical theory.
 
 I didn't last very long in academia. By 2021 I moved to California to work for SpaceX, where I led people analytics and research initiatives as a small unit within our corporate operations engineering department. During that time, I got into building software. By the end of 2024 I left to focus full-time on applied AI. 
 
