@@ -75,7 +75,7 @@ Our work revealed that persistent memory is fundamental to digital mind design.
 
 When AI remembers your past decisions, it can help make future ones without importing someone else's reflexes. When it understands your constraints, it maintains your variety instead of collapsing toward generic solutions. When it learns your patterns, it can extend them across multiple deliberations simultaneously. This contextual awareness helps solve the coordination bottleneck without sacrificing what makes your organization unique.
 
-This became integrated into our design approaching [Daybloom](/artifacts/agency42).
+This became integrated into our design approaching [Daybloom](https://www.daybloom.ai/).
 
 Daybloom handles memory, governance, data ingestion, and integration for AI characters and digital twins that can interact online.
 
@@ -109,4 +109,4 @@ The organizations that thrive in the future will be thinking deeply about how AI
 
 ---
 
-*See also*: [[/research/artifacts/cybernetics|Cybernetics (Research Notes)]]
+*See also*: [[/research/notes/cybernetics|Cybernetics (Research Notes)]]

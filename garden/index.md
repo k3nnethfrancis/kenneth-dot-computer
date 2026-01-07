@@ -28,7 +28,7 @@ title: kenneth.computer
 <div class="profile-section">
   <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image" />
   <div class="profile-info">
-    <h1>> local0ptimist</h1>
+    <h1>> kenneth_</h1>
     <p class="subtitle">i/o psychologist · ai developer</p>
     <div class="social-links">
       <a href="/blog" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
@@ -57,7 +57,7 @@ My work has always centered around the interplay between people and technology. 
 
 I didn't last very long in academia. By 2021 I moved to California to work for SpaceX, where I led people analytics and research initiatives as a small unit within our corporate operations engineering department. During that time, I got into building software. By the end of 2024 I left to focus full-time on applied AI. 
 
-In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators, artists and celebrities across LA and it's community of cyberpunks racing towards the augmented frontier.
+In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators, artists and celebrities across LA and its community of cyberpunks racing towards the augmented frontier.
 
 My work today sits at the intersection of [cybernetics](/research/notes/cybernetics) and [machine psychology](/research/notes/machine-psychology), which you can read more about in my [notes](/research). I try to work in public so that others can learn from and critique my work. I've also started keeping a [log](/research/logs/), which documents more of the raw thinking and experiments that go into it. Sometimes, I write essays and reflections in my [blog](/blog), which I've been doing sporadically since 2021.
 
@@ -67,9 +67,7 @@ The best way to get in touch is by engaging with me on [X](https://x.com/local0p
 
 To those builders out there in the arena, just rememeber, when the g-forces of acceleration are pulling you back into the noosphere, the only way out is through.
 
-Stay optimistic, friends.
-
-— Kenneth Cavanagh
+— local0ptimist
 
 ---
 
