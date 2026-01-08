@@ -70,6 +70,12 @@ git add quartz && git commit -m "update quartz" && git push
 - **Blog/Homepage**: Edit directly here, push
 - Use `draft: true` in frontmatter to hide content
 
+### Dates and RSS
+- `defaultDateType: "created"` - Site shows original publish dates by default
+- RSS feed at `/index.xml` includes all content with full HTML
+- **Typo fixes**: Don't touch frontmatter → date stays original, won't resurface in RSS
+- **Meaningful updates**: Update `date:` in frontmatter → content bubbles up in RSS as "new"
+
 ---
 
 ## Content Structure
