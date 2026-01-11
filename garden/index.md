@@ -49,29 +49,27 @@ title: kenneth.computer
 
 ---
 
-I'm focused on human-AI coordination in the field.
+I'm Kenneth Cavanagh, your local optimist navigating the accelerated frontier.
 
-By day, I support GTM at Glean, helping customers with AI adoption, agent design, and org strategies for navigating technological acceleration. By night, I'm booting up the home lab, getting a status update from Claude, and orchestrating agent swarms mapping the frontier.
+Currently, I'm focused on human-AI coordination at [Glean](https://glean.com/). I'm curious about how we can design sociotechnical systems that maximize human potential and control in an increasinly multi-agent world.
 
-My work has always centered around the interplay between people and technology. I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I also had a brief stint as an adjunct, teaching sociotechnical theory.
+Formally, I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint as an adjunct, teaching sociotechnical theory.
 
-I didn't last very long in academia. By 2021 I moved to California to work for SpaceX, where I led people analytics and research initiatives as a small unit within our corporate operations engineering department. During that time, I got into building software. By the end of 2024 I left to focus full-time on applied AI. 
+I didn't last long in academia. By 2021 I moved to California to work for SpaceX, where I led people analytics and research initiatives within our operations engineering unit. 
 
-In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators, artists and celebrities across LA and its community of cyberpunks racing towards the augmented frontier.
+During that time, I got into building software. By the end of 2024 I left to focus full-time on applied AI. In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators and brands.
 
-My work today sits at the intersection of [cybernetics](/research/notes/cybernetics) and [machine psychology](/research/notes/machine-psychology), which you can read more about in my [notes](/research). I try to work in public so that others can learn from and critique my work. I've also started keeping a [log](/research/logs/), which documents more of the raw thinking and experiments that go into it. Sometimes, I write essays and reflections in my [blog](/blog), which I've been doing sporadically since 2021.
+One of my core beliefs is that you should be pursuiing an ever growing list of side quests. Most recently, I've been learning to do AI [research](/research). I'm particularly interested in the framings of [machine psychology](/research/notes/machine-psychology/) and [cybernetics](/research/notes/cybernetics) applied to multi-agent systems, which I intend to write much more about.
 
-To get my latest thinking, you can subscribe to my [substack](https://local0ptimist.substack.com) or hook your agents up to my [RSS feed](/index.xml). 
+If you'd like to connect, the best way to get in touch is on [X](https://x.com/local0ptimist). I'm always looking for new collaborators and compute sponsors.
 
-The best way to get in touch is by engaging with me on [X](https://x.com/local0ptimist). I'm always looking for new collaborators and compute sponsors.
+To those builders out there in the arena, just rememeber, when the g-forces of acceleration are pulling you down, the only way out is through.
 
-To those builders out there in the arena, just rememeber, when the g-forces of acceleration are pulling you back into the noosphere, the only way out is through.
-
-— local0ptimist
+— [local0ptimist](https://x.com/local0ptimist)
 
 ---
 
-## <a href="/blog" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Essays**
+## <a href="/blog" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Posts**
 
 - [The cybernetic organization](/blog/cybernetic-organization)
 - [From tool AIs to agents](/blog/from-tool-ais-to-agents)
