@@ -23,10 +23,41 @@ title: kenneth.computer
 .social-links a:hover svg {
   stroke: #dc322f;
 }
+.profile-image-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  flex-shrink: 0;
+}
+.profile-image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px !important;
+  height: 160px !important;
+  border-radius: 50% !important;
+  object-fit: cover !important;
+  transition: opacity 0.3s ease;
+}
+.profile-image-container .profile-image-default {
+  object-position: center 35%;
+}
+.profile-image-container .profile-image-hover {
+  opacity: 0;
+}
+.profile-image-container:hover .profile-image-default {
+  opacity: 0;
+}
+.profile-image-container:hover .profile-image-hover {
+  opacity: 1;
+}
 </style>
 
 <div class="profile-section">
-  <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image" />
+  <div class="profile-image-container">
+    <img src="/images/pfp/me.png" alt="Profile picture" class="profile-image-default" />
+    <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image-hover" />
+  </div>
   <div class="profile-info">
     <h1>> kenneth_</h1>
     <p class="subtitle">i/o psychologist · ai developer</p>
@@ -49,21 +80,21 @@ title: kenneth.computer
 
 ---
 
-I'm Kenneth Cavanagh, your local optimist navigating the accelerated frontier.
+I'm a techno-optimist focused on human-AI coordination.
 
-Currently, I'm focused on human-AI coordination at [Glean](https://glean.com/). I'm curious about how we can design sociotechnical systems that maximize human potential and control in an increasinly multi-agent world.
+Currently, I'm on the field team at [Glean](https://glean.com/) helping customers design agents and develop organizational strategies for navigating the accelerated frontier. 
 
-Formally, I have a masters degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint as an adjunct, teaching sociotechnical theory.
+One of my driving curiosities relates to how we can design sociotechnical systems that maximize human potential and control in an increasingly multi-agent world.
 
-I didn't last long in academia. By 2021 I moved to California to work for SpaceX, where I led people analytics and research initiatives within our operations engineering unit. 
+Formally, I have a master's degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint as an adjunct, teaching sociotechnical theory.
 
-During that time, I got into building software. By the end of 2024 I left to focus full-time on applied AI. In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators and brands.
+I didn't last long in academia. By 2021, I moved to California to work for SpaceX, where I led people analytics and research initiatives within our operations engineering unit. 
 
-One of my core beliefs is that you should be pursuiing an ever growing list of side quests. Most recently, I've been learning to do AI [research](/research). I'm particularly interested in the framings of [machine psychology](/research/notes/machine-psychology/) and [cybernetics](/research/notes/cybernetics) applied to multi-agent systems, which I intend to write much more about.
+During that time, I got into building software. By the end of 2024, I left to focus full-time on applied AI. In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators and brands.
+
+One of my core beliefs is that you should be pursuing an ever-growing list of side quests. Most recently, I've been learning to do [AI research](/research). I'm particularly interested in the framings of [machine psychology](/research/notes/machine-psychology/) and [cybernetics](/research/notes/cybernetics) applied to multi-agent systems, which I intend to write more about.
 
 If you'd like to connect, the best way to get in touch is on [X](https://x.com/local0ptimist). I'm always looking for new collaborators and compute sponsors.
-
-To those builders out there in the arena, just rememeber, when the g-forces of acceleration are pulling you down, the only way out is through.
 
 — [local0ptimist](https://x.com/local0ptimist)
 
