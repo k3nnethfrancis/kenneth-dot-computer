@@ -27,6 +27,13 @@ For deep research collaboration, Kenneth works with Shoshin in `/Users/kenneth/D
 
 `garden/research/` is a symlink to `shoshin-codex/garden/research/`. Edit research in shoshin-codex, see changes locally via symlink.
 
+**New machine setup** - symlinks don't transfer via git, recreate with:
+```bash
+cd ~/Desktop/lab/notes/kenneth-dot-computer/garden
+rm research  # remove broken symlink if exists
+ln -s /Users/kenneth/Desktop/lab/notes/shoshin-codex/garden/research research
+```
+
 ### Deployment
 
 GitHub Actions (`.github/workflows/deploy.yml`) does a multi-repo checkout:
