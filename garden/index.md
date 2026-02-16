@@ -24,39 +24,21 @@ title: kenneth.computer
   stroke: #dc322f;
 }
 .profile-image-container {
-  position: relative;
   width: 160px;
   height: 160px;
   flex-shrink: 0;
 }
 .profile-image-container img {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 160px !important;
   height: 160px !important;
   border-radius: 50% !important;
   object-fit: cover !important;
-  transition: opacity 0.3s ease;
-}
-.profile-image-container .profile-image-default {
-  object-position: center 35%;
-}
-.profile-image-container .profile-image-hover {
-  opacity: 0;
-}
-.profile-image-container:hover .profile-image-default {
-  opacity: 0;
-}
-.profile-image-container:hover .profile-image-hover {
-  opacity: 1;
 }
 </style>
 
 <div class="profile-section">
   <div class="profile-image-container">
-    <img src="/images/pfp/me.png" alt="Profile picture" class="profile-image-default" />
-    <img src="/images/pfp/headshot.png" alt="Profile picture" class="profile-image-hover" />
+    <img src="/images/pfp/headshot.png" alt="Profile picture" />
   </div>
   <div class="profile-info">
     <h1>> kenneth_</h1>
@@ -99,6 +81,10 @@ If you'd like to connect, the best way to get in touch is on [X](https://x.com/l
 — [local0ptimist](https://x.com/local0ptimist)
 
 ---
+
+## <a href="/research/artifacts/technical-reports" aria-label="Technical Reports" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a> **Technical Reports**
+
+- [Multi-judge behavioral evaluation of GLM-5](/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval)
 
 ## <a href="/blog" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Posts**
 
