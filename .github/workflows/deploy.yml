@@ -24,18 +24,6 @@ jobs:
           submodules: recursive
           fetch-depth: 0
 
-      - name: Checkout shoshin-codex
-        uses: actions/checkout@v4
-        with:
-          repository: k3nnethfrancis/shoshin-codex
-          token: ${{ secrets.SHOSHIN_CODEX_TOKEN }}
-          path: vault
-
-      - name: Copy research content
-        run: |
-          rm -rf garden/research
-          cp -r vault/garden/research garden/research
-
       - name: Setup Node
         uses: actions/setup-node@v4
         with:

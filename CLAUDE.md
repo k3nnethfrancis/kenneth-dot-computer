@@ -21,28 +21,14 @@ For deep research collaboration, Kenneth works with Shoshin in `/Users/kenneth/D
 |------|----------|--------|
 | kenneth-dot-computer | This repo | GitHub (k3nnethfrancis/kenneth-dot-computer) |
 | quartz | Submodule at `quartz/` | GitHub (k3nnethfrancis/quartz), branch `v4` |
-| shoshin-codex | `../shoshin-codex/` | GitHub (k3nnethfrancis/shoshin-codex), private |
 
 ### Local Development
 
-`garden/research/` is a symlink to `shoshin-codex/garden/research/`. Edit research in shoshin-codex, see changes locally via symlink.
-
-**New machine setup** - symlinks don't transfer via git, recreate with:
-```bash
-cd ~/Desktop/lab/notes/kenneth-dot-computer/garden
-rm research  # remove broken symlink if exists
-ln -s /Users/kenneth/Desktop/lab/notes/shoshin-codex/garden/research research
-```
+`garden/` is the canonical public Garden: blog posts, research notes, images, and the site homepage all live here. Edit public content directly in this repository. Keep private drafts and working research in `shoshin-codex/` until they are ready to publish.
 
 ### Deployment
 
-GitHub Actions (`.github/workflows/deploy.yml`) does a multi-repo checkout:
-1. Checks out kenneth-dot-computer
-2. Checks out shoshin-codex (via `SHOSHIN_CODEX_TOKEN` secret)
-3. Copies `vault/garden/research/` to `garden/research/`
-4. Builds with Quartz
-
-This means the symlink works locally but deployment pulls fresh from shoshin-codex.
+GitHub Actions (`.github/workflows/deploy.yml`) checks out this repository and builds `garden/` with Quartz. The deployed content is exactly the content tracked here.
 
 ### Commit Workflows
 
@@ -53,11 +39,11 @@ git add . && git commit -m "message" && git push
 # → Auto-deploys via GitHub Actions
 ```
 
-**Research content changes** (shoshin-codex/garden/research/):
+**Research content changes** (`garden/research/`):
 ```bash
-# In shoshin-codex
+# In kenneth-dot-computer
 git add . && git commit -m "message" && git push
-# Then trigger deploy: push to kenneth-dot-computer OR manually run workflow
+# → Auto-deploys via GitHub Actions
 ```
 
 **Quartz customizations** (styles, components, layout):
@@ -73,8 +59,7 @@ git add quartz && git commit -m "update quartz" && git push
 ```
 
 ### Publishing Protocol
-- **Research**: Edit in shoshin-codex/garden/research/, push both repos
-- **Blog/Homepage**: Edit directly here, push
+- **Research, blog, and homepage**: Edit directly in `garden/`, then push this repository
 - Use `draft: true` in frontmatter to hide content
 
 ### Dates and RSS
@@ -91,7 +76,7 @@ git add quartz && git commit -m "update quartz" && git push
 garden/
 ├── index.md              ← Home page
 ├── blog/                 ← Published posts
-├── research/             ← Research notes (symlinked from shoshin-codex)
+├── research/             ← Published research notes
 │   ├── index.md          ← Research questions overview
 │   ├── logs/             ← Dated entries tracking research arc
 │   ├── artifacts/        ← Things built (Miniverse, Sigmund, experiments)
