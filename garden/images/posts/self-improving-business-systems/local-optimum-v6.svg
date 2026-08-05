@@ -1,35 +1,78 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">An organization at a local optimum</title>
-  <desc id="desc">A single filled node rests on a smaller peak while a taller peak rises beyond the intervening valley.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" role="img" aria-labelledby="title desc">
+  <title id="title">Escaping a local regime</title>
+  <desc id="desc">A monochrome wireframe landscape shows a current business system on a small local peak, a valley that must be crossed through redesign, and a higher-performing regime beyond it.</desc>
   <style>
-    .landscape {
+    .mesh, .contour, .route, .loop, .leader {
       fill: none;
       stroke: #002b36;
-      stroke-width: 1.8;
       stroke-linecap: round;
       stroke-linejoin: round;
       vector-effect: non-scaling-stroke;
     }
-    .node {
-      fill: #002b36;
-      stroke: #002b36;
-      stroke-width: 1;
-      vector-effect: non-scaling-stroke;
-    }
+    .mesh { stroke-width: 1.25; opacity: .72; }
+    .contour { stroke-width: 1.6; }
+    .route { stroke-width: 2.5; }
+    .loop { stroke-width: 1.7; stroke-dasharray: 5 7; }
+    .leader { stroke-width: 1.1; }
+    .system { fill: #002b36; }
+    .waypoint { fill: #fdf6e3; stroke: #002b36; stroke-width: 2; vector-effect: non-scaling-stroke; }
+    .label { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 18px; font-weight: 700; letter-spacing: 1.7px; }
+    .note { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; letter-spacing: 1px; }
   </style>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#002b36"/>
+    </marker>
+  </defs>
 
-  <path
-    class="landscape"
-    d="M70 380
-       C180 380 255 330 330 240
-       C345 222 355 214 370 214
-       C402 214 423 244 445 276
-       C495 350 555 382 620 370
-       C690 356 750 230 820 130
-       C850 88 875 68 910 68
-       C960 68 988 125 1016 192
-       C1050 270 1090 325 1130 340"
-  />
+  <!-- A projected field whose grid rises around two possible operating regimes. -->
+  <g aria-hidden="true">
+    <path class="mesh" d="M92 424 C185 396 257 373 329 336 C382 309 421 318 471 360 C525 405 595 422 655 390 C735 348 761 268 831 228 C890 194 962 211 1108 279"/>
+    <path class="mesh" d="M80 452 C187 425 265 402 337 368 C391 343 431 351 482 391 C537 433 604 450 670 418 C748 381 779 301 843 265 C904 231 968 246 1122 312"/>
+    <path class="mesh" d="M69 480 C188 455 274 432 345 402 C402 379 444 388 496 425 C551 465 621 481 689 452 C765 420 799 342 857 307 C918 271 982 286 1134 344"/>
+    <path class="mesh" d="M58 508 C190 485 283 464 355 438 C416 416 459 425 512 459 C567 496 638 513 708 486 C782 457 819 382 872 347 C933 311 996 326 1146 376"/>
+    <path class="mesh" d="M47 536 C191 516 292 496 366 475 C429 455 474 464 529 494 C585 528 655 545 727 520 C800 494 839 422 887 387 C948 352 1010 366 1157 408"/>
 
-  <circle class="node" cx="370" cy="214" r="10"/>
+    <path class="mesh" d="M123 522 C167 468 208 417 252 369 C289 329 316 282 349 238 C370 210 393 202 418 226 C456 260 486 326 526 389 C559 442 600 477 648 489"/>
+    <path class="mesh" d="M205 504 C246 451 285 394 322 338 C351 294 375 244 404 220 C424 202 446 209 465 244 C494 297 513 363 550 417 C582 462 619 486 670 494"/>
+    <path class="mesh" d="M290 486 C325 437 358 379 391 323 C417 281 441 234 466 226 C486 218 502 244 515 279 C538 337 552 395 579 440 C607 477 642 495 694 494"/>
+    <path class="mesh" d="M374 469 C404 424 433 371 460 323 C485 280 507 246 528 252 C550 258 562 293 574 326 C593 380 605 424 628 458 C652 488 686 496 723 486"/>
+    <path class="mesh" d="M459 455 C485 415 509 371 533 334 C557 297 578 280 597 293 C618 307 629 336 640 364 C657 412 671 444 692 468 C713 492 743 490 757 474"/>
+    <path class="mesh" d="M546 442 C570 409 592 376 613 353 C634 329 654 327 674 347 C695 367 709 391 722 414 C741 449 756 468 778 478 C800 488 819 468 829 439"/>
+    <path class="mesh" d="M638 428 C662 399 684 373 705 352 C729 326 748 304 769 271 C790 237 813 189 841 169 C864 153 887 165 904 198 C931 250 939 312 961 354 C979 389 1002 413 1035 427"/>
+    <path class="mesh" d="M736 414 C758 382 779 344 798 300 C816 258 834 191 858 144 C876 109 899 102 921 129 C952 168 967 252 980 319 C989 367 1010 405 1060 443"/>
+    <path class="mesh" d="M834 400 C854 360 873 306 889 250 C901 205 914 135 936 112 C955 91 978 112 992 151 C1014 211 1023 294 1035 348 C1045 395 1071 430 1094 451"/>
+    <path class="mesh" d="M932 386 C949 342 965 292 979 240 C991 194 1000 151 1015 144 C1031 137 1045 170 1055 207 C1071 265 1084 331 1094 379 C1102 417 1121 443 1129 456"/>
+  </g>
+
+  <!-- Contours make the two regimes legible at a glance. -->
+  <g aria-hidden="true">
+    <path class="contour" d="M270 403 C272 346 307 285 354 254 C399 224 453 241 479 291 C504 340 476 392 426 414 C371 438 305 431 270 403 Z"/>
+    <path class="contour" d="M306 379 C309 333 334 293 370 273 C406 253 443 271 458 307 C475 348 450 381 414 394 C370 410 329 402 306 379 Z"/>
+    <path class="contour" d="M339 356 C343 322 359 295 384 283 C410 271 432 288 438 314 C446 342 428 362 403 369 C376 377 352 370 339 356 Z"/>
+    <path class="contour" d="M728 350 C732 280 764 193 826 143 C881 98 951 105 987 164 C1023 224 1006 317 950 359 C892 403 782 400 728 350 Z"/>
+    <path class="contour" d="M770 326 C775 268 803 203 845 168 C886 134 935 142 960 185 C986 229 973 293 934 323 C892 355 810 358 770 326 Z"/>
+    <path class="contour" d="M810 300 C815 254 835 211 865 188 C894 165 923 174 939 202 C956 233 946 273 920 293 C890 317 838 321 810 300 Z"/>
+  </g>
+
+  <!-- Incremental optimization loops around the current regime. -->
+  <path class="loop" d="M356 246 C311 233 285 265 294 303 C302 338 340 355 377 337 C406 323 410 279 384 258" marker-end="url(#arrow)"/>
+  <text class="note" x="92" y="268">INCREMENTAL IMPROVEMENT</text>
+  <path class="leader" d="M274 271 L295 282"/>
+
+  <!-- The escape path has to descend before it can reach a better regime. -->
+  <path class="route" d="M391 300 C472 342 549 419 636 419 C718 418 757 342 847 209" marker-end="url(#arrow)"/>
+  <circle class="waypoint" cx="521" cy="384" r="6"/>
+  <circle class="waypoint" cx="636" cy="419" r="6"/>
+  <text class="note" x="480" y="550">REDESIGN THE WORK SYSTEM</text>
+
+  <circle class="system" cx="390" cy="300" r="10"/>
+  <path class="leader" d="M390 287 L390 198"/>
+  <text class="label" x="264" y="164">LOCAL REGIME</text>
+  <text class="note" x="270" y="188">CURRENT BUSINESS SYSTEM</text>
+
+  <circle class="waypoint" cx="847" cy="209" r="9"/>
+  <path class="leader" d="M856 199 L910 112"/>
+  <text class="label" x="902" y="70">HIGHER-PERFORMING</text>
+  <text class="label" x="902" y="94">REGIME</text>
 </svg>
