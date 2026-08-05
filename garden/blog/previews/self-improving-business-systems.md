@@ -70,6 +70,8 @@ In these cases, it is important to ensure agent builders can collaborate with do
 
 Best to get that loop started fast. This can start with controlled UAT, but the agent traces from these early iterations should become a dataset. It becomes the job of the tastemaker to turn tacit judgment into rubrics, golden sets, and verifiers that are increasingly embedded in an [agent behavior spec](https://www.braintrust.dev/blog/behavior-specs).
 
+![Repeated human judgments leave traces that become a reusable verifier, giving an agent a stable edge into the work system](/images/posts/self-improving-business-systems/finding-useful-signal-verifier-v1.svg)
+
 This suggests that skills like prompt engineering and agent evaluation will become increasingly important over the next era. Humans will be needed to orchestrate agents, judge their outputs, and update them methodically, leaning on domain expertise and taste to prevent [Goodharting](https://en.wikipedia.org/wiki/Goodhart%27s_law) and keeping systems aligned. The goal however, is to keep humans from being the bottlenecks and enable them to be systems architects.
 
 ## Self-improving business systems

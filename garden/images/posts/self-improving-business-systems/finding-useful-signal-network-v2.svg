@@ -1,68 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
   <title id="title">A legible learning system</title>
-  <desc id="desc">A trigger begins a run inside a business system. An agent works with records and a human review point. Internal checks return feedback during the run, while an external outcome returns evidence that improves the next run.</desc>
-  <defs>
-    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#002b36"/></marker>
-  </defs>
+  <desc id="desc">A business network becomes legible to an agent when an external trigger, internal checks, and outcome signals attach to the work. Evidence from each run remains in the network for the next.</desc>
   <style>
-    .boundary,.edge,.flow,.feedback,.leader { fill:none; stroke:#002b36; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
-    .boundary { stroke-width:1.7; stroke-dasharray:7 9; }
-    .edge { stroke-width:1.4; }
-    .flow { stroke-width:2.05; marker-end:url(#arrow); }
-    .feedback { stroke-width:1.7; stroke-dasharray:4 7; marker-end:url(#arrow); }
-    .leader { stroke-width:1.2; }
-    .human { fill:#002b36; stroke:#002b36; stroke-width:1; vector-effect:non-scaling-stroke; }
-    .tool,.agent { fill:#fdf6e3; stroke:#002b36; vector-effect:non-scaling-stroke; }
-    .tool { stroke-width:1.8; }
-    .agent { stroke-width:2.7; }
-    .label { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:20px; font-weight:700; letter-spacing:1.65px; text-anchor:middle; }
-    .note { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:15px; font-weight:600; letter-spacing:1.15px; text-anchor:middle; }
-    .tiny { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:13px; font-weight:600; letter-spacing:1px; text-anchor:middle; }
+    .edge, .learning, .leader { fill: none; stroke: #002b36; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .edge { stroke-width: 1.55; }
+    .spine { stroke-width: 2.15; }
+    .learning { stroke-width: 1.7; stroke-dasharray: 6 8; }
+    .leader { stroke-width: 1.15; }
+    .human { fill: #002b36; }
+    .record { fill: #fdf6e3; stroke: #002b36; stroke-width: 1.8; vector-effect: non-scaling-stroke; }
+    .signal, .agent { fill: #fdf6e3; stroke: #002b36; vector-effect: non-scaling-stroke; }
+    .signal { stroke-width: 2.25; }
+    .agent { stroke-width: 2.55; }
+    .label { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 19px; font-weight: 700; letter-spacing: 1.65px; text-anchor: middle; }
+    .note { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-anchor: middle; }
+    .micro { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: .9px; text-anchor: middle; }
   </style>
 
-  <text class="label" x="600" y="54">A LEGIBLE LEARNING SYSTEM</text>
+  <text class="label" x="600" y="58">A LEGIBLE LEARNING SYSTEM</text>
+  <text class="note" x="600" y="85">SIGNALS MAKE THE WORK AVAILABLE FOR ITERATION</text>
 
-  <!-- The dashed boundary makes the business system, rather than the agent, the unit of analysis. -->
-  <rect class="boundary" x="124" y="112" width="788" height="270" rx="18"/>
-  <text class="tiny" x="166" y="142">BUSINESS SYSTEM</text>
+  <!-- The operating environment: a graph of tools, records, and human-held work. -->
+  <path class="edge" d="M218 280 L283 177 L382 205 L425 297 L360 378 L252 368 L218 280 M283 177 L360 378 M382 205 L252 368"/>
+  <path class="edge spine" d="M360 378 L521 326"/>
+  <circle class="record" cx="218" cy="280" r="9"/><circle class="record" cx="283" cy="177" r="10"/><circle class="record" cx="382" cy="205" r="9"/><circle class="record" cx="425" cy="297" r="10"/><circle class="record" cx="252" cy="368" r="9"/>
+  <circle class="human" cx="360" cy="378" r="15"/>
 
-  <!-- One run has a deliberately plain operating spine. -->
-  <circle class="tool" cx="72" cy="248" r="12"/>
-  <path class="flow" d="M96 248 H224"/>
-  <circle class="agent" cx="250" cy="248" r="24"/><circle class="human" cx="250" cy="248" r="4"/>
-  <path class="flow" d="M275 248 H474"/>
-  <circle class="tool" cx="500" cy="248" r="15"/>
-  <path class="flow" d="M516 248 H674"/>
-  <circle class="human" cx="700" cy="248" r="15"/>
-  <path class="flow" d="M716 248 H862"/>
-  <circle class="tool" cx="888" cy="248" r="12"/>
-  <path class="flow" d="M912 248 H1001"/>
-  <circle class="tool" cx="1028" cy="248" r="26"/><circle class="tool" cx="1028" cy="248" r="10"/><circle class="human" cx="1028" cy="248" r="3.5"/>
+  <path class="edge" d="M521 326 L557 210 L650 164 L741 214 L760 318 L687 382 L600 368 L521 326 M557 210 L687 382 M650 164 L760 318 M600 368 L687 382"/>
+  <circle class="record" cx="557" cy="210" r="9"/><circle class="record" cx="650" cy="164" r="10"/><circle class="record" cx="741" cy="214" r="9"/><circle class="record" cx="760" cy="318" r="10"/><circle class="record" cx="687" cy="382" r="9"/><circle class="record" cx="600" cy="368" r="9"/>
+  <circle class="agent" cx="544" cy="348" r="25"/><circle class="human" cx="544" cy="348" r="5"/>
 
-  <!-- Records and checks are reachable parts of the operating environment. -->
-  <path class="edge" d="M250 224 L250 176 M500 232 L500 176 M700 232 L700 176"/>
-  <circle class="tool" cx="250" cy="160" r="10"/>
-  <circle class="tool" cx="500" cy="160" r="10"/>
-  <circle class="tool" cx="700" cy="160" r="10"/>
-  <path class="edge" d="M250 170 H500 M500 170 H700"/>
-  <text class="tiny" x="250" y="142">CONTEXT</text>
-  <text class="tiny" x="500" y="142">RECORD</text>
-  <text class="tiny" x="700" y="142">CHECK</text>
+  <path class="edge spine" d="M687 382 L816 358"/>
+  <path class="edge" d="M816 358 L800 244 L864 175 L962 206 L994 307 L933 384 L816 358 M800 244 L933 384 M864 175 L994 307"/>
+  <circle class="record" cx="800" cy="244" r="9"/><circle class="record" cx="864" cy="175" r="10"/><circle class="record" cx="962" cy="206" r="9"/><circle class="record" cx="994" cy="307" r="10"/><circle class="record" cx="933" cy="384" r="9"/>
+  <circle class="human" cx="816" cy="358" r="15"/>
 
-  <!-- Internal feedback reaches the agent before this run is complete. -->
-  <path class="feedback" d="M700 264 C660 337 493 340 374 309 C314 293 277 277 262 271"/>
-  <path class="leader" d="M565 361 V337"/>
-  <text class="note" x="565" y="404">INTERNAL FEEDBACK</text>
+  <!-- A few durable signal nodes turn a human-shaped network into a learnable one. -->
+  <circle class="signal" cx="112" cy="280" r="16"/><circle class="signal" cx="112" cy="280" r="6"/>
+  <path class="edge spine" d="M128 280 H209"/>
+  <text class="note" x="112" y="318">TRIGGER</text>
 
-  <!-- The outcome lives outside the system and closes the loop across runs. -->
-  <path class="feedback" d="M1028 276 C1017 455 785 478 509 453 C270 431 145 383 144 294 C144 268 171 250 224 250"/>
-  <path class="leader" d="M1028 100 V210"/>
-  <text class="note" x="1028" y="84">OUTCOME SIGNAL</text>
+  <circle class="signal" cx="742" cy="452" r="16"/><circle class="signal" cx="742" cy="452" r="6"/>
+  <path class="edge spine" d="M730 441 L697 392"/>
+  <text class="note" x="742" y="489">CHECK</text>
 
-  <text class="note" x="72" y="288">TRIGGER</text>
-  <text class="note" x="250" y="292">AGENT</text>
-  <text class="note" x="500" y="292">WORK</text>
-  <text class="note" x="700" y="292">REVIEW</text>
-  <text class="note" x="888" y="288">DELIVERY</text>
-  <text class="note" x="600" y="477">EVIDENCE FROM ONE RUN IMPROVES THE NEXT</text>
+  <circle class="signal" cx="1085" cy="242" r="17"/><circle class="signal" cx="1085" cy="242" r="7"/>
+  <path class="edge spine" d="M1008 296 L1069 251"/>
+  <text class="note" x="1085" y="280">OUTCOME</text>
+
+  <!-- Outcome evidence remains connected to the next run rather than disappearing into a report. -->
+  <path class="learning" d="M1085 263 C1096 461 924 518 687 506 C425 493 169 470 134 327 C128 305 145 284 203 280"/>
+  <text class="note" x="600" y="534">EVIDENCE FROM ONE RUN BECOMES SIGNAL FOR THE NEXT</text>
 </svg>

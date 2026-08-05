@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-labelledby="title desc">
+  <title id="title">Turning judgment into a verifier</title>
+  <desc id="desc">A domain expert's repeated judgments leave traces. Those traces gather into a reusable verifier, which gives an agent a stable edge into the work system without requiring review of every run.</desc>
+  <style>
+    .edge, .trace, .leader { fill: none; stroke: #002b36; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .edge { stroke-width: 1.55; }
+    .trace { stroke-width: 1.55; stroke-dasharray: 5 8; }
+    .spine { stroke-width: 2.2; }
+    .leader { stroke-width: 1.15; }
+    .human { fill: #002b36; }
+    .record { fill: #fdf6e3; stroke: #002b36; stroke-width: 1.8; vector-effect: non-scaling-stroke; }
+    .verifier, .agent { fill: #fdf6e3; stroke: #002b36; vector-effect: non-scaling-stroke; }
+    .verifier { stroke-width: 2.45; }
+    .agent { stroke-width: 2.55; }
+    .label { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 19px; font-weight: 700; letter-spacing: 1.65px; text-anchor: middle; }
+    .note { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-anchor: middle; }
+    .micro { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: .9px; text-anchor: middle; }
+  </style>
+
+  <text class="label" x="600" y="56">JUDGMENT BECOMES INFRASTRUCTURE</text>
+  <text class="note" x="600" y="83">TRACES TURN TACIT EXPERTISE INTO A REUSABLE VERIFIER</text>
+
+  <!-- Early runs still depend on direct human judgment. -->
+  <circle class="human" cx="216" cy="205" r="17"/>
+  <path class="trace" d="M216 224 C188 274 177 321 198 365 M216 224 C244 274 268 308 296 344 M216 224 C274 250 322 268 372 286"/>
+  <circle class="record" cx="198" cy="365" r="10"/><circle class="record" cx="296" cy="344" r="10"/><circle class="record" cx="372" cy="286" r="10"/>
+  <text class="note" x="216" y="160">DOMAIN EXPERT</text>
+  <text class="micro" x="216" y="389">JUDGED RUNS</text>
+
+  <!-- The traces accumulate into a connected body of evidence. -->
+  <path class="edge" d="M390 326 L454 239 L533 214 L602 270 L582 362 L501 390 L426 378 L390 326 M454 239 L501 390 M533 214 L582 362 M426 378 L501 390"/>
+  <path class="edge" d="M372 286 L426 378 M296 344 L390 326 M198 365 L390 326"/>
+  <circle class="record" cx="390" cy="326" r="9"/><circle class="record" cx="454" cy="239" r="10"/><circle class="record" cx="533" cy="214" r="9"/><circle class="record" cx="602" cy="270" r="10"/><circle class="record" cx="582" cy="362" r="9"/><circle class="record" cx="501" cy="390" r="10"/><circle class="record" cx="426" cy="378" r="9"/>
+  <text class="note" x="496" y="438">TRACES</text>
+
+  <!-- A verifier is a durable new node in the system, not another human review step. -->
+  <path class="edge spine" d="M602 270 L727 262"/>
+  <circle class="verifier" cx="756" cy="260" r="29"/><circle class="verifier" cx="756" cy="260" r="12"/>
+  <text class="note" x="756" y="315">VERIFIER</text>
+  <path class="edge spine" d="M785 260 L892 286"/>
+
+  <!-- Once judgment is encoded, the agent can work through a stable, inspectable edge. -->
+  <circle class="agent" cx="921" cy="293" r="25"/><circle class="human" cx="921" cy="293" r="5"/>
+  <path class="edge" d="M945 292 L1002 208 L1084 239 L1102 333 L1037 386 L971 350 L945 292 M1002 208 L1037 386 M1084 239 L971 350"/>
+  <circle class="record" cx="1002" cy="208" r="9"/><circle class="record" cx="1084" cy="239" r="10"/><circle class="record" cx="1102" cy="333" r="9"/><circle class="record" cx="1037" cy="386" r="10"/><circle class="record" cx="971" cy="350" r="9"/>
+  <text class="note" x="921" y="337">AGENT</text>
+
+  <text class="note" x="600" y="500">HUMAN REVIEW MOVES FROM EACH RUN TO THE SYSTEM THAT JUDGES RUNS</text>
+  <path class="leader" d="M756 479 L756 293"/>
+</svg>

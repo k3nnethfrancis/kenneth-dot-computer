@@ -1,52 +1,56 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
   <title id="title">A human-shaped work system</title>
-  <desc id="desc">A business process moves from request to delivery through three people. Each person holds local tools and context; work advances only when a person interprets, acts, or approves it.</desc>
-  <defs>
-    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#002b36"/></marker>
-  </defs>
+  <desc id="desc">A business system appears as a network of records and tools clustered around human operators. The human nodes are the bridges between clusters; an agent remains adjacent to the system because there is no agent-ready edge into it.</desc>
   <style>
-    .boundary,.flow,.context,.leader { fill:none; stroke:#002b36; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
-    .boundary { stroke-width:1.7; stroke-dasharray:7 9; }
-    .flow { stroke-width:2.05; marker-end:url(#arrow); }
-    .context { stroke-width:1.35; }
-    .leader { stroke-width:1.2; }
-    .human { fill:#002b36; stroke:#002b36; stroke-width:1; vector-effect:non-scaling-stroke; }
-    .tool { fill:#fdf6e3; stroke:#002b36; stroke-width:1.8; vector-effect:non-scaling-stroke; }
-    .label { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:20px; font-weight:700; letter-spacing:1.65px; text-anchor:middle; }
-    .note { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:15px; font-weight:600; letter-spacing:1.15px; text-anchor:middle; }
-    .micro { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:12px; font-weight:600; letter-spacing:1px; text-anchor:middle; }
+    .edge, .attempt, .leader { fill: none; stroke: #002b36; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .edge { stroke-width: 1.55; }
+    .bridge { stroke-width: 2.35; }
+    .attempt { stroke-width: 1.5; stroke-dasharray: 5 8; }
+    .leader { stroke-width: 1.15; }
+    .human { fill: #002b36; }
+    .record { fill: #fdf6e3; stroke: #002b36; stroke-width: 1.8; vector-effect: non-scaling-stroke; }
+    .agent { fill: #fdf6e3; stroke: #002b36; stroke-width: 2.35; vector-effect: non-scaling-stroke; }
+    .label { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 19px; font-weight: 700; letter-spacing: 1.65px; text-anchor: middle; }
+    .note { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 14px; font-weight: 600; letter-spacing: 1px; text-anchor: middle; }
+    .micro { fill: #002b36; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 12px; font-weight: 600; letter-spacing: .9px; text-anchor: middle; }
   </style>
 
-  <text class="label" x="600" y="54">HUMAN-SHAPED WORK SYSTEM</text>
-  <path class="boundary" d="M135 112 H1065 V380 H135 Z"/>
+  <text class="label" x="600" y="58">HUMAN-SHAPED WORK SYSTEM</text>
+  <text class="note" x="600" y="85">THE NETWORK'S BRIDGES ARE PEOPLE, NOT INTERFACES</text>
 
-  <!-- One operational spine, interrupted by the people who carry judgment and context. -->
-  <circle class="tool" cx="165" cy="246" r="12"/>
-  <path class="flow" d="M188 246 H328"/>
-  <circle class="human" cx="352" cy="246" r="16"/>
-  <path class="flow" d="M376 246 H552"/>
-  <circle class="human" cx="576" cy="246" r="16"/>
-  <path class="flow" d="M600 246 H776"/>
-  <circle class="human" cx="800" cy="246" r="16"/>
-  <path class="flow" d="M824 246 H1012"/>
-  <circle class="tool" cx="1035" cy="246" r="12"/>
+  <!-- Local records, tools, and tacit context form clusters around their human operators. -->
+  <g aria-label="First human-held context cluster">
+    <path class="edge" d="M165 298 L233 216 L310 262 L343 344 L250 379 L165 298 M233 216 L250 379 M310 262 L250 379"/>
+    <path class="edge" d="M250 379 L299 430 L343 344 M233 216 L299 430"/>
+    <path class="edge bridge" d="M299 430 L492 323"/>
+    <circle class="record" cx="165" cy="298" r="9"/><circle class="record" cx="233" cy="216" r="10"/><circle class="record" cx="310" cy="262" r="9"/><circle class="record" cx="343" cy="344" r="9"/><circle class="record" cx="250" cy="379" r="10"/>
+    <circle class="human" cx="299" cy="430" r="15"/>
+  </g>
 
-  <!-- The local, person-held environments that make this system human-shaped. -->
-  <path class="context" d="M352 229 L311 170 M352 229 L352 145 M352 229 L395 170"/>
-  <circle class="tool" cx="311" cy="170" r="10"/><circle class="tool" cx="352" cy="145" r="10"/><circle class="tool" cx="395" cy="170" r="10"/>
-  <path class="context" d="M576 263 L535 310 M576 263 L576 330 M576 263 L619 310"/>
-  <circle class="tool" cx="535" cy="310" r="10"/><circle class="tool" cx="576" cy="330" r="10"/><circle class="tool" cx="619" cy="310" r="10"/>
-  <path class="context" d="M800 229 L759 170 M800 229 L800 145 M800 229 L843 170"/>
-  <circle class="tool" cx="759" cy="170" r="10"/><circle class="tool" cx="800" cy="145" r="10"/><circle class="tool" cx="843" cy="170" r="10"/>
+  <g aria-label="Second human-held context cluster">
+    <path class="edge" d="M492 323 L526 195 L621 169 L697 226 L684 328 L594 361 L492 323 M526 195 L594 361 M621 169 L684 328"/>
+    <path class="edge" d="M594 361 L622 426 L684 328 M697 226 L622 426"/>
+    <path class="edge bridge" d="M622 426 L788 364"/>
+    <circle class="record" cx="492" cy="323" r="9"/><circle class="record" cx="526" cy="195" r="9"/><circle class="record" cx="621" cy="169" r="10"/><circle class="record" cx="697" cy="226" r="9"/><circle class="record" cx="684" cy="328" r="10"/>
+    <circle class="human" cx="622" cy="426" r="15"/>
+  </g>
 
-  <text class="note" x="165" y="286">REQUEST</text>
-  <text class="note" x="352" y="294">INTERPRET</text>
-  <text class="note" x="576" y="294">EXECUTE</text>
-  <text class="note" x="800" y="294">APPROVE</text>
-  <text class="note" x="1035" y="286">DELIVERY</text>
+  <g aria-label="Third human-held context cluster">
+    <path class="edge" d="M788 364 L755 254 L817 180 L911 208 L944 300 L889 373 L788 364 M755 254 L889 373 M817 180 L944 300"/>
+    <path class="edge" d="M889 373 L825 444 L788 364 M944 300 L825 444"/>
+    <circle class="record" cx="755" cy="254" r="9"/><circle class="record" cx="817" cy="180" r="10"/><circle class="record" cx="911" cy="208" r="9"/><circle class="record" cx="944" cy="300" r="10"/><circle class="record" cx="889" cy="373" r="9"/>
+    <circle class="human" cx="825" cy="444" r="15"/>
+  </g>
 
-  <text class="micro" x="352" y="128">LOCAL CONTEXT</text>
-  <text class="micro" x="576" y="358">LOCAL TOOLS</text>
-  <text class="micro" x="800" y="128">LOCAL JUDGMENT</text>
-  <text class="note" x="600" y="449">WORK ADVANCES WHEN A PERSON MAKES IT LEGIBLE</text>
+  <!-- The agent is close to the work, but the graph has no legible port for it. -->
+  <circle class="agent" cx="1055" cy="384" r="17"/>
+  <circle class="agent" cx="1055" cy="384" r="7"/>
+  <path class="attempt" d="M1033 374 C999 356 981 341 956 322"/>
+  <path class="attempt" d="M1033 394 C995 406 971 419 939 438"/>
+  <path class="leader" d="M966 329 L982 345 M974 321 L990 337"/>
+  <path class="leader" d="M947 431 L963 447 M955 423 L971 439"/>
+  <text class="note" x="1055" y="424">AGENT</text>
+
+  <text class="note" x="592" y="506">WORK CROSSES CLUSTERS THROUGH HUMAN-HELD CONTEXT AND JUDGMENT</text>
+  <path class="leader" d="M592 484 L622 442"/>
 </svg>
