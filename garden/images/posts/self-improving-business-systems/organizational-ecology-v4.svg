@@ -1,0 +1,125 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">The business unit inside an organizational hierarchy</title>
+  <desc id="desc">A network becomes increasingly connected from individuals through teams and business units to the organization, then opens into a sparse environment. The business unit is highlighted as the bounded system that owns an outcome.</desc>
+  <style>
+    .edge { fill: none; stroke: #002b36; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .bridge { fill: none; stroke: #002b36; stroke-width: 1.85; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .open { fill: #fdf6e3; stroke: #002b36; stroke-width: 1.7; vector-effect: non-scaling-stroke; }
+    .solid { fill: #002b36; stroke: #002b36; stroke-width: 1; vector-effect: non-scaling-stroke; }
+    .label { fill: #002b36; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 22px; font-weight: 600; letter-spacing: 1.8px; text-anchor: middle; }
+    .note { fill: #002b36; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 14px; font-weight: 650; letter-spacing: 1.1px; text-anchor: middle; }
+    .focus { fill: none; stroke: #002b36; stroke-width: 1.9; stroke-dasharray: 7 8; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+  </style>
+
+  <!-- Individuals: discrete actors -->
+  <g>
+    <circle class="solid" cx="58" cy="198" r="7"/>
+    <circle class="open" cx="106" cy="252" r="8"/>
+    <circle class="solid" cx="71" cy="318" r="7"/>
+    <circle class="open" cx="135" cy="365" r="8"/>
+  </g>
+
+  <!-- Team: a small, coherent local network -->
+  <g>
+    <path class="edge" d="M204 237 L246 196 L292 220 L320 270 L285 318 L229 307 L196 273 Z"/>
+    <path class="edge" d="M246 196 L247 260 L292 220 M247 260 L320 270 M247 260 L285 318 M247 260 L229 307 M196 273 L247 260"/>
+    <circle class="open" cx="204" cy="237" r="8"/>
+    <circle class="solid" cx="246" cy="196" r="7"/>
+    <circle class="open" cx="292" cy="220" r="8"/>
+    <circle class="solid" cx="320" cy="270" r="7"/>
+    <circle class="open" cx="285" cy="318" r="8"/>
+    <circle class="solid" cx="229" cy="307" r="7"/>
+    <circle class="solid" cx="247" cy="260" r="7"/>
+    <circle class="open" cx="196" cy="273" r="8"/>
+  </g>
+
+  <!-- Business unit: differently sized teams joined into a bounded operating network -->
+  <path class="focus" d="M338 118 C390 90 475 103 533 133 C592 164 622 241 609 311 C595 385 516 414 433 401 C359 390 327 345 327 277 C327 209 306 149 338 118 Z"/>
+  <g>
+    <path class="edge" d="M378 170 L420 142 L462 174 L453 223 L404 232 L369 204 Z"/>
+    <path class="edge" d="M420 142 L417 190 L462 174 M417 190 L453 223 M417 190 L404 232 M417 190 L369 204 M378 170 L417 190"/>
+
+    <path class="edge" d="M361 288 L401 256 L449 274 L466 323 L433 365 L382 350 L350 319 Z"/>
+    <path class="edge" d="M401 256 L408 310 L449 274 M408 310 L466 323 M408 310 L433 365 M408 310 L382 350 M408 310 L350 319 M361 288 L408 310"/>
+
+    <path class="edge" d="M503 210 L545 185 L584 213 L592 258 L558 286 L515 267 Z"/>
+    <path class="edge" d="M545 185 L548 238 L584 213 M548 238 L592 258 M548 238 L558 286 M548 238 L515 267 M503 210 L548 238"/>
+
+    <path class="bridge" d="M453 223 C468 236 483 238 503 210 M449 274 C468 267 489 260 515 267 M466 323 C498 332 531 323 558 286 M462 174 C490 161 520 164 545 185"/>
+
+    <circle class="solid" cx="378" cy="170" r="7"/><circle class="open" cx="420" cy="142" r="8"/>
+    <circle class="solid" cx="462" cy="174" r="7"/><circle class="open" cx="453" cy="223" r="8"/>
+    <circle class="solid" cx="404" cy="232" r="7"/><circle class="open" cx="369" cy="204" r="8"/>
+    <circle class="solid" cx="417" cy="190" r="7"/>
+
+    <circle class="open" cx="361" cy="288" r="8"/><circle class="solid" cx="401" cy="256" r="7"/>
+    <circle class="open" cx="449" cy="274" r="8"/><circle class="solid" cx="466" cy="323" r="7"/>
+    <circle class="open" cx="433" cy="365" r="8"/><circle class="solid" cx="382" cy="350" r="7"/>
+    <circle class="open" cx="350" cy="319" r="8"/><circle class="solid" cx="408" cy="310" r="7"/>
+
+    <circle class="open" cx="503" cy="210" r="8"/><circle class="solid" cx="545" cy="185" r="7"/>
+    <circle class="open" cx="584" cy="213" r="8"/><circle class="solid" cx="592" cy="258" r="7"/>
+    <circle class="open" cx="558" cy="286" r="8"/><circle class="solid" cx="515" cy="267" r="7"/>
+    <circle class="open" cx="548" cy="238" r="8"/>
+  </g>
+
+  <!-- Organization: multiple business-unit structures with selective cross-links -->
+  <g>
+    <path class="edge" d="M682 153 L730 124 L782 146 L802 191 L768 225 L718 216 L674 191 Z"/>
+    <path class="edge" d="M730 124 L735 177 L782 146 M735 177 L802 191 M735 177 L768 225 M735 177 L718 216 M735 177 L674 191 M682 153 L735 177"/>
+
+    <path class="edge" d="M657 283 L703 248 L759 266 L776 320 L741 358 L687 346 L648 320 Z"/>
+    <path class="edge" d="M703 248 L713 303 L759 266 M713 303 L776 320 M713 303 L741 358 M713 303 L687 346 M713 303 L648 320 M657 283 L713 303"/>
+
+    <path class="edge" d="M836 183 L881 151 L932 172 L951 219 L917 253 L864 242 L827 217 Z"/>
+    <path class="edge" d="M881 151 L888 204 L932 172 M888 204 L951 219 M888 204 L917 253 M888 204 L864 242 M888 204 L827 217 M836 183 L888 204"/>
+
+    <path class="edge" d="M826 303 L866 276 L914 291 L929 337 L898 372 L851 361 L818 337 Z"/>
+    <path class="edge" d="M866 276 L873 322 L914 291 M873 322 L929 337 M873 322 L898 372 M873 322 L851 361 M873 322 L818 337 M826 303 L873 322"/>
+
+    <path class="bridge" d="M802 191 C817 190 825 187 836 183 M768 225 C795 240 825 246 864 242 M776 320 C795 308 808 304 826 303 M741 358 C775 371 818 372 851 361 M759 266 C786 271 813 278 826 303 M917 253 C925 271 923 281 914 291"/>
+    <path class="bridge" d="M592 258 C620 256 634 274 657 283 M584 213 C614 201 647 195 674 191"/>
+
+    <circle class="open" cx="682" cy="153" r="8"/><circle class="solid" cx="730" cy="124" r="7"/>
+    <circle class="open" cx="782" cy="146" r="8"/><circle class="solid" cx="802" cy="191" r="7"/>
+    <circle class="open" cx="768" cy="225" r="8"/><circle class="solid" cx="718" cy="216" r="7"/>
+    <circle class="open" cx="674" cy="191" r="8"/><circle class="solid" cx="735" cy="177" r="7"/>
+
+    <circle class="solid" cx="657" cy="283" r="7"/><circle class="open" cx="703" cy="248" r="8"/>
+    <circle class="solid" cx="759" cy="266" r="7"/><circle class="open" cx="776" cy="320" r="8"/>
+    <circle class="solid" cx="741" cy="358" r="7"/><circle class="open" cx="687" cy="346" r="8"/>
+    <circle class="solid" cx="648" cy="320" r="7"/><circle class="open" cx="713" cy="303" r="8"/>
+
+    <circle class="solid" cx="836" cy="183" r="7"/><circle class="open" cx="881" cy="151" r="8"/>
+    <circle class="solid" cx="932" cy="172" r="7"/><circle class="open" cx="951" cy="219" r="8"/>
+    <circle class="solid" cx="917" cy="253" r="7"/><circle class="open" cx="864" cy="242" r="8"/>
+    <circle class="solid" cx="827" cy="217" r="7"/><circle class="open" cx="888" cy="204" r="8"/>
+
+    <circle class="open" cx="826" cy="303" r="8"/><circle class="solid" cx="866" cy="276" r="7"/>
+    <circle class="open" cx="914" cy="291" r="8"/><circle class="solid" cx="929" cy="337" r="7"/>
+    <circle class="open" cx="898" cy="372" r="8"/><circle class="solid" cx="851" cy="361" r="7"/>
+    <circle class="open" cx="818" cy="337" r="8"/><circle class="solid" cx="873" cy="322" r="7"/>
+  </g>
+
+  <!-- Environment: mostly unconnected actors and occasional local relations -->
+  <g>
+    <circle class="solid" cx="1040" cy="158" r="7"/>
+    <circle class="open" cx="1098" cy="190" r="8"/>
+    <circle class="solid" cx="1151" cy="151" r="7"/>
+    <path class="edge" d="M1072 274 L1120 298"/>
+    <circle class="open" cx="1072" cy="274" r="8"/>
+    <circle class="solid" cx="1120" cy="298" r="7"/>
+    <circle class="open" cx="1160" cy="244" r="8"/>
+    <circle class="solid" cx="1048" cy="363" r="7"/>
+    <path class="edge" d="M1108 375 L1152 356"/>
+    <circle class="solid" cx="1108" cy="375" r="7"/>
+    <circle class="open" cx="1152" cy="356" r="8"/>
+  </g>
+
+  <text class="label" x="96" y="478">INDIVIDUALS</text>
+  <text class="label" x="256" y="478">TEAM</text>
+  <text class="label" x="474" y="478">BUSINESS UNIT</text>
+  <text class="note" x="474" y="452">OWNS AN OUTCOME</text>
+  <text class="label" x="804" y="478">ORGANIZATION</text>
+  <text class="label" x="1101" y="478">ENVIRONMENT</text>
+</svg>

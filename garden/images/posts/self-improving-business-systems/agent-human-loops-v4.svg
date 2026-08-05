@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 690" role="img" aria-labelledby="title desc">
+  <title id="title">Agent and human loops</title>
+  <desc id="desc">An inner agent loop observes, reasons, and acts. An outer human loop monitors, evaluates, and steers the agentic system.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M1 1 L11 6 L1 11 Z" fill="#002b36"/>
+    </marker>
+  </defs>
+  <style>
+    .loop { fill: none; stroke: #002b36; stroke-width: 2.45; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; marker-end: url(#arrow); }
+    .network { fill: none; stroke: #002b36; stroke-width: 1.35; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .open { fill: #fdf6e3; stroke: #002b36; stroke-width: 2; vector-effect: non-scaling-stroke; }
+    .solid { fill: #002b36; stroke: #002b36; stroke-width: 1.1; vector-effect: non-scaling-stroke; }
+    .loop-label { fill: #002b36; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 28px; font-weight: 700; letter-spacing: 2px; text-anchor: middle; }
+    .action { fill: #002b36; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 22px; font-weight: 600; letter-spacing: 1.2px; }
+  </style>
+
+  <!-- Human loop: monitor -> evaluate -> steer -->
+  <path class="loop" d="M319.3 149.3 A270 270 0 0 1 769.3 331.2"/>
+  <path class="loop" d="M768.0 382.9 A270 270 0 0 1 518.8 619.3"/>
+  <path class="loop" d="M481.2 619.3 A270 270 0 0 1 296.3 172.4"/>
+
+  <!-- Agent loop: observe -> reason -> act -->
+  <path class="loop" d="M342.4 322.2 A160 160 0 0 1 657.6 322.2"/>
+  <path class="loop" d="M659.0 369.5 A160 160 0 0 1 511.2 509.6"/>
+  <path class="loop" d="M488.8 509.6 A160 160 0 0 1 341.0 369.5"/>
+
+  <!-- Human nodes -->
+  <circle class="solid" cx="309" cy="159" r="11"/>
+  <circle class="solid" cx="770" cy="350" r="11"/>
+  <circle class="solid" cx="500" cy="620" r="11"/>
+
+  <!-- Agent nodes -->
+  <circle class="open" cx="340" cy="350" r="11"/>
+  <circle class="open" cx="660" cy="350" r="11"/>
+  <circle class="open" cx="500" cy="510" r="11"/>
+
+  <!-- Emergent organization inside the agent loop -->
+  <g>
+    <path class="network" d="M427 305 L462 276 L505 292 L539 269 L574 304 L557 343 L589 373 L550 407 L508 393 L476 425 L438 400 L411 365 Z"/>
+    <path class="network" d="M427 305 L468 333 L462 276 M468 333 L505 292 M468 333 L411 365 M468 333 L438 400 M505 292 L520 344 L539 269 M520 344 L574 304 M520 344 L557 343 M520 344 L508 393 M557 343 L589 373 M557 343 L550 407 M508 393 L476 425 M438 400 L476 425"/>
+    <path class="network" d="M399 321 L427 305 M391 387 L411 365 M604 321 L574 304 M611 403 L589 373"/>
+
+    <circle class="open" cx="399" cy="321" r="6"/>
+    <circle class="solid" cx="427" cy="305" r="6"/>
+    <circle class="open" cx="462" cy="276" r="6"/>
+    <circle class="solid" cx="505" cy="292" r="6"/>
+    <circle class="open" cx="539" cy="269" r="6"/>
+    <circle class="solid" cx="574" cy="304" r="6"/>
+    <circle class="open" cx="604" cy="321" r="6"/>
+    <circle class="open" cx="557" cy="343" r="6"/>
+    <circle class="solid" cx="589" cy="373" r="6"/>
+    <circle class="open" cx="611" cy="403" r="6"/>
+    <circle class="solid" cx="550" cy="407" r="6"/>
+    <circle class="open" cx="508" cy="393" r="6"/>
+    <circle class="solid" cx="476" cy="425" r="6"/>
+    <circle class="open" cx="438" cy="400" r="6"/>
+    <circle class="solid" cx="411" cy="365" r="6"/>
+    <circle class="open" cx="391" cy="387" r="6"/>
+    <circle class="solid" cx="468" cy="333" r="6"/>
+    <circle class="open" cx="520" cy="344" r="6"/>
+  </g>
+
+  <!-- Minimum viable labels -->
+  <text class="loop-label" x="500" y="51">HUMAN LOOP</text>
+  <text class="loop-label" x="500" y="145">AGENT LOOP</text>
+
+  <text class="action" x="285" y="129" text-anchor="end">MONITOR</text>
+  <text class="action" x="830" y="358" text-anchor="start">EVALUATE</text>
+  <text class="action" x="500" y="664" text-anchor="middle">STEER</text>
+
+  <text class="action" x="303" y="270" text-anchor="middle">OBSERVE</text>
+  <text class="action" x="692" y="270" text-anchor="middle">REASON</text>
+  <text class="action" x="500" y="551" text-anchor="middle">ACT</text>
+</svg>

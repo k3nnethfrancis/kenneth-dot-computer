@@ -51,6 +51,20 @@ git commit -m "Update content"
 git push
 ```
 
+### Shareable previews
+
+Posts in `garden/blog/previews/` can be shared while they are still in progress.
+Use both frontmatter flags explicitly:
+
+```yaml
+draft: true
+preview: true
+```
+
+This renders an addressable page under `/blog/previews/` while keeping it out of
+the Explorer, search index, graph, RSS feed, sitemap, tags, and folder listings.
+`draft: true` without `preview: true` remains unpublished.
+
 ## Editing Theme
 
 The `quartz/` folder is a submodule pointing to [k3nnethfrancis/quartz](https://github.com/k3nnethfrancis/quartz).
@@ -80,4 +94,3 @@ npx quartz build --directory ../garden
 ## License
 
 Content © Kenneth Francis. Quartz is MIT licensed.
-

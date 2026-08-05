@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">A human-shaped work system</title>
+  <desc id="desc">A business process moves from request to delivery through three people. Each person holds local tools and context; work advances only when a person interprets, acts, or approves it.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#002b36"/></marker>
+  </defs>
+  <style>
+    .boundary,.flow,.context,.leader { fill:none; stroke:#002b36; stroke-linecap:round; stroke-linejoin:round; vector-effect:non-scaling-stroke; }
+    .boundary { stroke-width:1.7; stroke-dasharray:7 9; }
+    .flow { stroke-width:2.05; marker-end:url(#arrow); }
+    .context { stroke-width:1.35; }
+    .leader { stroke-width:1.2; }
+    .human { fill:#002b36; stroke:#002b36; stroke-width:1; vector-effect:non-scaling-stroke; }
+    .tool { fill:#fdf6e3; stroke:#002b36; stroke-width:1.8; vector-effect:non-scaling-stroke; }
+    .label { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:20px; font-weight:700; letter-spacing:1.65px; text-anchor:middle; }
+    .note { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:15px; font-weight:600; letter-spacing:1.15px; text-anchor:middle; }
+    .micro { fill:#002b36; font-family:"IBM Plex Mono", "Courier New", monospace; font-size:12px; font-weight:600; letter-spacing:1px; text-anchor:middle; }
+  </style>
+
+  <text class="label" x="600" y="54">HUMAN-SHAPED WORK SYSTEM</text>
+  <path class="boundary" d="M135 112 H1065 V380 H135 Z"/>
+
+  <!-- One operational spine, interrupted by the people who carry judgment and context. -->
+  <circle class="tool" cx="165" cy="246" r="12"/>
+  <path class="flow" d="M188 246 H328"/>
+  <circle class="human" cx="352" cy="246" r="16"/>
+  <path class="flow" d="M376 246 H552"/>
+  <circle class="human" cx="576" cy="246" r="16"/>
+  <path class="flow" d="M600 246 H776"/>
+  <circle class="human" cx="800" cy="246" r="16"/>
+  <path class="flow" d="M824 246 H1012"/>
+  <circle class="tool" cx="1035" cy="246" r="12"/>
+
+  <!-- The local, person-held environments that make this system human-shaped. -->
+  <path class="context" d="M352 229 L311 170 M352 229 L352 145 M352 229 L395 170"/>
+  <circle class="tool" cx="311" cy="170" r="10"/><circle class="tool" cx="352" cy="145" r="10"/><circle class="tool" cx="395" cy="170" r="10"/>
+  <path class="context" d="M576 263 L535 310 M576 263 L576 330 M576 263 L619 310"/>
+  <circle class="tool" cx="535" cy="310" r="10"/><circle class="tool" cx="576" cy="330" r="10"/><circle class="tool" cx="619" cy="310" r="10"/>
+  <path class="context" d="M800 229 L759 170 M800 229 L800 145 M800 229 L843 170"/>
+  <circle class="tool" cx="759" cy="170" r="10"/><circle class="tool" cx="800" cy="145" r="10"/><circle class="tool" cx="843" cy="170" r="10"/>
+
+  <text class="note" x="165" y="286">REQUEST</text>
+  <text class="note" x="352" y="294">INTERPRET</text>
+  <text class="note" x="576" y="294">EXECUTE</text>
+  <text class="note" x="800" y="294">APPROVE</text>
+  <text class="note" x="1035" y="286">DELIVERY</text>
+
+  <text class="micro" x="352" y="128">LOCAL CONTEXT</text>
+  <text class="micro" x="576" y="358">LOCAL TOOLS</text>
+  <text class="micro" x="800" y="128">LOCAL JUDGMENT</text>
+  <text class="note" x="600" y="449">WORK ADVANCES WHEN A PERSON MAKES IT LEGIBLE</text>
+</svg>

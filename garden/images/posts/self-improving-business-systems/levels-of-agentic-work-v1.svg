@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">Levels of agentic work</title>
+  <desc id="desc">A single task grows into a coordinated workflow, then a business process connected to a measurable signal and human governor.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 12 12" refX="10" refY="6" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 L11 6 L1 11 Z" fill="#002b36"/></marker>
+  </defs>
+  <style>
+    .edge { fill: none; stroke: #002b36; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; }
+    .bridge { fill: none; stroke: #002b36; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; vector-effect: non-scaling-stroke; marker-end: url(#arrow); }
+    .open { fill: #fdf6e3; stroke: #002b36; stroke-width: 2; vector-effect: non-scaling-stroke; }
+    .solid { fill: #002b36; stroke: #002b36; stroke-width: 1; vector-effect: non-scaling-stroke; }
+    .label { fill: #002b36; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 23px; font-weight: 700; letter-spacing: 1.8px; text-anchor: middle; }
+    .note { fill: #002b36; font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 17px; font-weight: 600; letter-spacing: 1.2px; text-anchor: middle; }
+  </style>
+
+  <g transform="translate(0 -75)">
+  <!-- A task: one bounded unit of execution -->
+  <g>
+    <circle class="solid" cx="176" cy="250" r="10"/>
+    <circle class="open" cx="252" cy="250" r="12"/>
+    <path class="bridge" d="M190 250 H232"/>
+    <text class="label" x="214" y="390">TASK</text>
+    <text class="note" x="214" y="422">ONE ACTION</text>
+  </g>
+
+  <!-- A workflow: several tasks coordinated together -->
+  <g>
+    <path class="edge" d="M405 212 L459 173 L521 205 L516 279 L452 313 L394 270 Z"/>
+    <path class="edge" d="M405 212 L452 244 L459 173 M452 244 L521 205 M452 244 L516 279 M452 244 L394 270"/>
+    <circle class="solid" cx="405" cy="212" r="9"/><circle class="open" cx="459" cy="173" r="10"/>
+    <circle class="solid" cx="521" cy="205" r="9"/><circle class="open" cx="516" cy="279" r="10"/>
+    <circle class="solid" cx="452" cy="313" r="9"/><circle class="open" cx="394" cy="270" r="10"/>
+    <circle class="solid" cx="452" cy="244" r="9"/>
+    <text class="label" x="458" y="390">WORKFLOW</text>
+    <text class="note" x="458" y="422">COORDINATED TASKS</text>
+  </g>
+
+  <!-- A business process: linked workflows, signal, and human governance -->
+  <g>
+    <path class="edge" d="M707 199 L748 164 L799 188 L809 238 L767 268 L720 246 Z"/>
+    <path class="edge" d="M748 164 L755 216 L799 188 M755 216 L809 238 M755 216 L767 268 M755 216 L720 246 M707 199 L755 216"/>
+    <path class="edge" d="M818 266 L861 234 L912 254 L923 303 L882 337 L832 317 Z"/>
+    <path class="edge" d="M861 234 L870 286 L912 254 M870 286 L923 303 M870 286 L882 337 M870 286 L832 317 M818 266 L870 286"/>
+    <path class="edge" d="M798 188 C821 194 834 211 861 234 M809 238 C830 248 844 259 861 234 M767 268 C792 278 806 289 832 317"/>
+    <path class="bridge" d="M923 303 C965 285 987 252 987 214"/>
+    <circle class="open" cx="1000" cy="202" r="13"/>
+    <path class="edge" d="M882 337 C940 372 1015 360 1063 340"/>
+    <circle class="solid" cx="1080" cy="340" r="11"/>
+    <text class="note" x="1000" y="178">SIGNAL</text>
+    <text class="note" x="1080" y="380">HUMAN</text>
+    <circle class="solid" cx="707" cy="199" r="9"/><circle class="open" cx="748" cy="164" r="10"/>
+    <circle class="solid" cx="799" cy="188" r="9"/><circle class="open" cx="809" cy="238" r="10"/>
+    <circle class="solid" cx="767" cy="268" r="9"/><circle class="open" cx="720" cy="246" r="10"/>
+    <circle class="solid" cx="755" cy="216" r="9"/>
+    <circle class="open" cx="818" cy="266" r="10"/><circle class="solid" cx="861" cy="234" r="9"/>
+    <circle class="open" cx="912" cy="254" r="10"/><circle class="solid" cx="923" cy="303" r="9"/>
+    <circle class="open" cx="882" cy="337" r="10"/><circle class="solid" cx="832" cy="317" r="9"/>
+    <circle class="open" cx="870" cy="286" r="10"/>
+    <text class="label" x="844" y="390">BUSINESS PROCESS</text>
+  </g>
+
+  <path class="edge" d="M90 462 H1110" marker-end="url(#arrow)"/>
+  <text class="note" x="600" y="490">MORE AUTONOMY · MORE OF THE PROCESS TO VERIFY</text>
+  </g>
+</svg>

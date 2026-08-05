@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+  <title id="title">An organization at a local optimum</title>
+  <desc id="desc">A single filled node rests on a smaller peak while a taller peak rises beyond the intervening valley.</desc>
+  <style>
+    .landscape {
+      fill: none;
+      stroke: #002b36;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      vector-effect: non-scaling-stroke;
+    }
+    .node {
+      fill: #002b36;
+      stroke: #002b36;
+      stroke-width: 1;
+      vector-effect: non-scaling-stroke;
+    }
+  </style>
+
+  <path
+    class="landscape"
+    d="M70 380
+       C180 380 255 330 330 240
+       C345 222 355 214 370 214
+       C402 214 423 244 445 276
+       C495 350 555 382 620 370
+       C690 356 750 230 820 130
+       C850 88 875 68 910 68
+       C960 68 988 125 1016 192
+       C1050 270 1090 325 1130 340"
+  />
+
+  <circle class="node" cx="370" cy="214" r="10"/>
+</svg>
