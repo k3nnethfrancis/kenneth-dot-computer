@@ -12,7 +12,7 @@ tags:
 
 # Self-Improving Business Systems
 
-After spending the last year or so working on enterprise AI deployments, I've come to describe the main problem with adoption as organizations being stuck in local optima. Their business processes are designed for a world built by humans while we barrel towards a future built by machines.
+After spending the last year or so working on enterprise AI deployments, I’ve come to describe the main problem with adoption as organizations being stuck in local optima: business processes designed for a world built by humans, while we barrel towards a future built by machines.
 
 Despite rapidly advancing capabilities, knowledge workers are struggling to find use cases beyond generating content and searching for documents. Meanwhile, Engineering has figured out how to use the same tokens to build a [Software Factory](https://x.com/factoryai/status/2066588050617249904?s=46). The two outcomes are not the same, yet they share the same cost per token.
 
