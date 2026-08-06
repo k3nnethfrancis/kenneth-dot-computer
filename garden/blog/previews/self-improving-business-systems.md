@@ -38,23 +38,31 @@ Organizations are adaptive systems that improve through feedback. At scale, they
 ![A single organization node rests on a smaller local peak while a taller peak rises beyond the intervening valley](/images/posts/self-improving-business-systems/local-optimum-v6.svg)
 [Gwern](https://www.lesswrong.com/posts/bX7q9NcoGpb5KdZzQ/if-i-wanted-to-spend-way-more-on-ai-what-would-i-spend-it-on) offers a useful way to see the obstacle. For decades the only general intelligence you could hire was a person, so every workflow, role, and handoff was cut to a human shape. A company therefore ends up full of human-shaped holes and almost no LLM-shaped ones, because any opening a model could simply drop into would, by now, already have a person in it. To put it simply, the problem is less about LLM capability than it is about system design, and modern organizational systems were not designed for LLMs.
 
-Zoom in on that local regime and the abstraction becomes concrete: a business process is a network of people, tools, records, and handoffs. Work can flow through it, but its interfaces and judgment points are designed around the human operators who already hold it together.
+The challenge that lies ahead of us then is somewhat counterintuitive. To cross the chasm into a more productive "AI-native" regime, we may experience a loss in productivity until we can foster the organizational learning necessary to fully adapt to the new world.
+
+More concretely, we can think about a business process as a graph of people and technology connected together by the flow of information. For the work to flow through it, many things have to go right. In the old human-centric regime, learning how to do something the correct way did not require writing down a standard operating procedure for every single task or workflow, let alone creating an eval to keep the system aligned [though, to be fair, performance reviews are a form of human evals, but this responsibility fell on management]. Generally, you showed someone something once or twice, then they started doing it on their own, albeit somewhat poorly perhaps until they learned to self-improve.
 
 ![A bounded business process held together by human operators, tools, and handoffs, with no agent-ready interface](/images/posts/self-improving-business-systems/human-shaped-work-system-v1.svg)
 
+Agents today do not work like this. They require writing careful instructions that take iterations to ensure they are not misspecified and new forms of evaluations that look more like behavioral science than user acceptance testing. The economic potential of agents in the organization seems theoretically uncapped, but without AI-native teams capable of both identifying the right problems and redesigning the work, an organization's AI productivity gains might as well be neutralized as the rest of its competition experiences the same gains when the labs ship new models. A competitive advantage in this regime can therefore look quite simple: the ability to continuously improve AI systems by embedding and improving upon tacit knowledge through feedback loops that enable you to keep one step ahead of the frontier.
+
 ## Finding useful signal
-A good sign a problem is LLM-shaped is when its results are is easy to verify. Software factories work because we can take external signals like user feedback or Github issues and translate those into problems that can be verified with code. For example, if a user submits a bug report, agents can set up an environment, reproduce the bug, inspect the logs, and verify that a proposed fix solves it, leaving behind traces and tests that can inform the next run. This simple loop constitutes the software factory in its most basic form and from it, we can reverse engineer its principles.
+The first problem teams will face is looking for the right problem for agents to work on. The simplest way to determine this is by considering *potential value* and *signal quality*. The first asks "What would the maximum value of this agent be if it could run completely autonomously, 24/7?" The second asks, "How well can available signals tell us about our agent's performance on this problem?"
 
-At a minimum, that loop has four requirements:
+A good sign a problem is LLM-shaped is when its results are easy to verify. Software factories work because we can take external signals like user feedback or Github issues and translate those into problems that can be verified with code. For example, if a user submits a bug report, agents can set up an environment, reproduce the bug, inspect the logs, and verify that a proposed fix solves it, leaving behind traces and tests that can inform the next run. This simple loop constitutes the software factory in its most basic form and from it, we can reverse engineer its principles.
 
-- **External trigger:** a request, schedule, event, or changing condition tells the system when there is work to do.
-- **Work environment:** the agent has the context, tools, permissions, and workspace required to carry out the work.
-- **Internal feedback:** rubrics, tests, policy checks, traces, or human review establish whether the work is being done correctly.
-- **External outcome signal:** a downstream result establishes whether the completed work actually achieved its goal.
+At a minimum, the loop needs four things:
+
+- **Trigger:** an observable event tells the system when to act.
+- **Environment:** the agent can access the context, tools, permissions, and state required to do the work.
+- **Verification:** checks during the run tell the agent whether the work meets its requirements and what needs to change.
+- **Outcome signal:** a downstream result tells the system whether the completed work achieved its intended goal.
+
+Verification closes the loop within a run. The outcome signal closes the loop between runs.
 
 ![An agent works inside a bounded business system, where a trigger starts work, internal checks guide it, and a measurable outcome returns a learning signal](/images/posts/self-improving-business-systems/finding-useful-signal-network-v2.svg)
 
-These signals can come from many places, but they fall into two broad categories. External signals tell agents when to run and how well the run performed, while internal signals can tell the agent whether or not the output of the task or workflow met certain requirements. To automate a complete business process we'll need both kinds of signals. However, the most important signal is that which verifies the work.
+Triggers and outcomes are external signals: one starts the run, while the other tells us how it performed. Verification is internal to the work, guiding the agent toward an acceptable result. Automating a complete business process requires both. Without verification, the agent cannot reliably complete the work; without an outcome signal, the system cannot tell whether it is optimizing the right thing.
 
 In knowledge work environments, this is where the loop usually breaks. Much of the work is still verified by humans, through judgment that is slow, tacit, and rarely captured in a form an agent can use.
 
