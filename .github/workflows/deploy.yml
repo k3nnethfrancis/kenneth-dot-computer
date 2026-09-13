@@ -1,8 +1,6 @@
-name: Deploy to GitHub Pages
+name: Legacy Quartz 4 rollback (manual)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -51,6 +49,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
+      - name: Legacy Quartz 4 rollback (manual)
         id: deployment
         uses: actions/deploy-pages@v4
