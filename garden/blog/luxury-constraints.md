@@ -1,11 +1,12 @@
 ---
 title: Luxury constraints
 date: 2024-10-14
-image: /images/posts/luxury-constraints.jpg
+image: ../images/posts/luxury-constraints.jpg
 readTime: 2 minutes
 tags:
-- startups
-- innovation
+  - startups
+  - innovation
+modified: 2026-09-13T16:24:34.111Z
 ---
 
 
@@ -36,7 +37,7 @@ Hence the name Thumbprint, which is also a really delicious [kind of cookie](htt
 
 Anyway. We knew that because we had 24 hours, we could only build so much of it out. We threw together a sleak web app that allowed you to generate these cookies. To our surprise, it was enough for people to understand the idea pretty easily.
 
-![designed by future rob](/images/thumbprinthackathon.png)
+![designed by future rob](<../images/thumbprinthackathon.png>)
 
 When you have all the time in the world, it's easy to let perfectionism take hold. You'll convince yourself of things like "the product will only seem investable when we have x feature working."
 

@@ -1,13 +1,15 @@
 ---
 title: LLM personality profiles
 description: How LLMs respond to the HEXACO-60 personality inventory.
-subtitle: Initial Explorations with GPT-5, Claude Sonnet 4.5, GPT-4o, and Llama 4 Maverick
+subtitle: Initial Explorations with GPT-5, Claude Sonnet 4.5, GPT-4o, and Llama
+  4 Maverick
 date: 2025-11-26
 created: 2025-11-26
 status: in-progress
 tags:
   - machine-psychology
   - psychometrics
+modified: 2026-09-13T16:24:34.156Z
 ---
 
 An initial exploration of how large language models respond to the HEXACO-60 personality inventory, a validated psychometric instrument designed for humans. Results reveal distinct "personality profiles" across models, systematic response patterns, and potential insights into training choices.
@@ -161,7 +163,7 @@ The asymmetric pattern (denies flaws, won't claim virtues) suggests the latter.
 
 ## Technical Implementation
 
-Built using the [Psych](/research/artifacts/psych) evaluation framework:
+Built using the Psych evaluation framework:
 - OpenRouter for unified model access
 - Mirascope for LLM calls with structured output
 - Streamlit dashboard for visualization
@@ -173,7 +175,7 @@ Built using the [Psych](/research/artifacts/psych) evaluation framework:
 
 Jain et al. (2025) explored HEXACO and sycophancy using a different methodology - activation-space geometry rather than self-report questionnaires. They created steering vectors for each HEXACO trait and measured cosine similarity with a sycophancy vector. Key finding: **Extraversion correlates most strongly with sycophancy**.
 
-See [[/research/notes/measuring-sycophancy|Sycophancy Measurement]] for details on their approach vs ours.
+See [Sycophancy Measurement](<../notes/measuring-sycophancy.md>) for details on their approach vs ours.
 
 ### Large-Scale Cross-Validation
 
@@ -204,4 +206,4 @@ This work builds on a growing body of research applying human psychometrics to L
 
 ---
 
-*See also*: [[/research/artifacts/psych|Psych]], [[/research/notes/measuring-sycophancy|Sycophancy Measurement]]
+*See also*: Psych, [Sycophancy Measurement](<../notes/measuring-sycophancy.md>)

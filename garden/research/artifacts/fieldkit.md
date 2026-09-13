@@ -6,6 +6,7 @@ tags:
   - machine-psychology
   - tools
   - methodology
+modified: 2026-09-13T16:24:34.154Z
 ---
 
 # Machine Psychologist's Fieldkit
@@ -30,8 +31,8 @@ claude plugin install machine-psychology-fieldkit
 
 ## Status
 
-Active experimentation. See [[/research/logs/2026-01-28|2026-01-28 log]] for initial Petri experiments.
+Active experimentation. See [2026-01-28 log](<../logs/2026-01-28.md>) for initial Petri experiments.
 
 ---
 
-*See also*: [[/research/notes/machine-psychology|Machine Psychology]], [[/research/index|Research Questions]]
+*See also*: [Machine Psychology](<../notes/machine-psychology.md>), [Research Questions](<../index.md>)

@@ -1,12 +1,13 @@
 ---
 title: Venture into the noosphere
 date: 2022-02-03
-image: /images/posts/venture-into-the-noosphere.jpg
+image: ../images/posts/venture-into-the-noosphere.jpg
 readTime: 3 minutes
 tags:
-- science
-- web3
-- culture
+  - science
+  - web3
+  - culture
+modified: 2026-09-13T16:24:34.112Z
 ---
 
 
@@ -34,7 +35,7 @@ These days, it's as if we're all dipping into the same memetic pool. We're at a 
 
 As a 90s kid working in tech, I'm deeply entrenched in these ideas. I've watched the internet develop from the Kid Goku days of screeching dial-up to Super Saiyan web3 on virtual reality, blockchain, and artificial intelligence.
 
-![The internet in the 90s [depicted as Kid Goku]](/images/kidgoku.png)
+![The internet in the 90s \[depicted as Kid Goku\]](<../images/kidgoku.png>)
 
 For people like me, the internet is culture.
 

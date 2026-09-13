@@ -137,7 +137,7 @@ Adversarial auditing via multi-turn conversation. You provide "seed instructions
 
 Automated behavioral evaluation. You specify a target behavior (e.g., sycophancy), Bloom generates scenarios and measures elicitation rate (% of rollouts showing the behavior).
 
-See [[/research/notes/behavioral-evals|Behavioral Evaluation Tools]] for detailed comparison.
+See Behavioral Evaluation Tools for detailed comparison.
 
 ### Other 2025 Benchmarks
 
@@ -151,8 +151,8 @@ See [[/research/notes/behavioral-evals|Behavioral Evaluation Tools]] for detaile
 
 These behavioral evaluation tools (Petri, Bloom) are now the primary approach for measuring alignment-relevant behaviors like sycophancy. Direct behavioral measurement rather than psychometric abstraction.
 
-For multi-agent research, these tools provide individual agent behavioral baselines before studying team dynamics. See [[/research/index|Research Questions]] for the current research direction.
+For multi-agent research, these tools provide individual agent behavioral baselines before studying team dynamics. See [Research Questions](<../index.md>) for the current research direction.
 
 ---
 
-*See also*: [[/research/notes/behavioral-evals|Behavioral Evaluation Tools]], [[/research/artifacts/hexaco-profiling|HEXACO Profiling]], [[/research/index|Research Questions]]
+*See also*: Behavioral Evaluation Tools, [HEXACO Profiling](<../artifacts/hexaco-profiling.md>), [Research Questions](<../index.md>)

@@ -3,16 +3,18 @@ title: research
 description: Notes on AI behavior and human-AI control.
 tags:
   - research
+created: 2026-08-06T16:31:56.511Z
+modified: 2026-09-13T16:24:34.157Z
 ---
 # research
 
 Notes on AI behavior and human-AI control.
 
-As AI systems grow more capable, understanding their behavior becomes critical. [[/research/notes/machine-psychology|Machine psychology]] is emerging as a discipline to meet this need. Open Phil is funding [black-box LLM psychology](https://www.openphilanthropy.org/grants/) research. OpenAI says [AI safety needs social scientists](https://openai.com/index/ai-safety-needs-social-scientists/). These notes are my contribution to that conversation.
+As AI systems grow more capable, understanding their behavior becomes critical. [Machine psychology](<notes/machine-psychology.md>) is emerging as a discipline to meet this need. Open Phil is funding [black-box LLM psychology](https://www.openphilanthropy.org/grants/) research. OpenAI says [AI safety needs social scientists](https://openai.com/index/ai-safety-needs-social-scientists/). These notes are my contribution to that conversation.
 
 ## Core questions
 
-I'm primarily interested in two overlapping research areas related to human-AI coordination. My frame of reference for these questions is influenced by my background in industrial/organizational psychology. More specifically, I am attempting to integrate the learnings and methodologies of behavioral science and sociotechnical theory through the lens of [[/research/notes/cybernetics|cybernetics]].
+I'm primarily interested in two overlapping research areas related to human-AI coordination. My frame of reference for these questions is influenced by my background in industrial/organizational psychology. More specifically, I am attempting to integrate the learnings and methodologies of behavioral science and sociotechnical theory through the lens of [cybernetics](<notes/cybernetics.md>).
 
 ### How do humans remain in control in an increasingly multi-agent world?
 
@@ -30,7 +32,7 @@ Evidence from systems like [Plastic Labs' Neuromancer](https://www.plasticlabs.a
 
 Of these, I'm particularly interested in *3. agent orchestration* and *4. scientific advancement*, which I believe are downstream of *1. better state inference* and *2. real-time intervention*. I hope that people who read my work can also improve outcomes for *5. applied domains*.
 
-It is possible that this leads to the need for interpretability research. I focus on behavioral approaches because they tend to be more scalable—experiments are more likely to translate from one model to the next, regardless of size. They do not require access to the underlying model weights, and are more implementable by practitioners in the field, who will likely far outnumber the AI neuroscientists. And frankly, it's where I'm most useful. Mechanistic interpretability can produce more causal explanations, and the two complement each other—I discuss this further in my note on [[/research/notes/machine-psychology|machine psychology]].
+It is possible that this leads to the need for interpretability research. I focus on behavioral approaches because they tend to be more scalable—experiments are more likely to translate from one model to the next, regardless of size. They do not require access to the underlying model weights, and are more implementable by practitioners in the field, who will likely far outnumber the AI neuroscientists. And frankly, it's where I'm most useful. Mechanistic interpretability can produce more causal explanations, and the two complement each other—I discuss this further in my note on [machine psychology](<notes/machine-psychology.md>).
 
 Ultimately, my goal is to help push the needle forward on practical AI safety, corrigibility, and control research.
 

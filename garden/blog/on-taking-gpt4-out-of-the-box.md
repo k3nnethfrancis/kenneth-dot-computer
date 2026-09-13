@@ -1,11 +1,12 @@
 ---
 title: On taking gpt-4 out of the box
 date: 2023-10-24
-image: /images/posts/on-taking-gpt4-out-of-the-box.jpg
+image: ../images/posts/on-taking-gpt4-out-of-the-box.jpg
 readTime: 7 minutes
 tags:
-- ai
-- philosophy
+  - ai
+  - philosophy
+modified: 2026-09-13T16:24:34.111Z
 ---
 
 

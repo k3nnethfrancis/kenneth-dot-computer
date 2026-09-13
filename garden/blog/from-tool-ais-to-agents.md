@@ -1,10 +1,11 @@
 ---
 title: "Digital mind design: From tool AIs to agents"
 date: 2024-12-15
-image: /images/posts/from-tool-ais-to-agents.jpg
+image: ../images/posts/from-tool-ais-to-agents.jpg
 tags:
   - ai
   - digital-mind-design
+modified: 2026-09-13T16:24:34.110Z
 ---
 
 <style>

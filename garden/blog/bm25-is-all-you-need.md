@@ -1,11 +1,12 @@
 ---
 title: BM25 is all you need
 date: 2024-09-01
-image: /images/posts/bm25-is-all-you-need.jpg
+image: ../images/posts/bm25-is-all-you-need.jpg
 readTime: 10 minutes
 tags:
-- ai
-- technology
+  - ai
+  - technology
+modified: 2026-09-13T16:24:34.110Z
 ---
 
 

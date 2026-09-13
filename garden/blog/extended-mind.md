@@ -1,12 +1,13 @@
 ---
 title: Work systems and the extended mind
 date: 2021-05-23
-image: /images/posts/extended-mind.jpg
+image: ../images/posts/extended-mind.jpg
 readTime: 2 minutes
 tags:
-- philosophy
-- psychology
-- ar/vr
+  - philosophy
+  - psychology
+  - ar/vr
+modified: 2026-09-13T16:24:34.110Z
 ---
 
 

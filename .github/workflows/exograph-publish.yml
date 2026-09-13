@@ -1,16 +1,24 @@
-# Install in k3nnethfrancis/kenneth-dot-computer only after preview/cutover review.
-# Dedicated snapshot commits contain publication/ (sanitized Markdown/assets only).
+# Install in the selected site repository after preview/cutover review.
+# The publication branch contains garden/ (sanitized Markdown/assets only).
 name: Publish reviewed Exograph snapshot
 run-name: Publish ${{ inputs.snapshot_commit }} with ${{ inputs.engine_commit }}
 on:
   workflow_dispatch:
     inputs:
       snapshot_commit:
-        description: Reviewed immutable site-repository commit containing publication/
+        description: Reviewed immutable site-repository commit containing garden/
         type: string
         required: true
       engine_commit:
-        description: Reviewed immutable k3nnethfrancis/quartz publishing engine commit
+        description: Reviewed immutable Quartz engine commit
+        type: string
+        required: true
+      engine_repository:
+        description: GitHub repository containing the reviewed Quartz engine
+        type: string
+        required: true
+      site_url:
+        description: HTTPS URL for this site
         type: string
         required: true
 permissions:
@@ -28,9 +36,18 @@ jobs:
         env:
           SNAPSHOT: ${{ inputs.snapshot_commit }}
           ENGINE: ${{ inputs.engine_commit }}
+          ENGINE_REPOSITORY: ${{ inputs.engine_repository }}
+          SITE_URL: ${{ inputs.site_url }}
         run: |
           [[ "$SNAPSHOT" =~ ^[0-9a-f]{40}$ ]]
           [[ "$ENGINE" =~ ^[0-9a-f]{40}$ ]]
+          [[ "$ENGINE_REPOSITORY" =~ ^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$ ]]
+          node -e 'const u=new URL(process.env.SITE_URL);if(u.protocol!=="https:"||u.username||u.password||u.search||u.hash)process.exit(1)'
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          path: publisher
+          persist-credentials: false
       - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.snapshot_commit }}
@@ -38,7 +55,8 @@ jobs:
           persist-credentials: false
       - uses: actions/checkout@v4
         with:
-          repository: k3nnethfrancis/quartz
+          repository: ${{ inputs.engine_repository }}
+          token: ${{ secrets.EXOGRAPH_ENGINE_TOKEN || github.token }}
           ref: ${{ inputs.engine_commit }}
           path: engine
           persist-credentials: false
@@ -48,7 +66,9 @@ jobs:
       - run: npm ci
         working-directory: engine
       - name: Build the reviewed snapshot
-        run: node engine/scripts/exograph-publish.mjs --input snapshot/publication --output public --site-url https://kenneth.computer --action prepare
+        env:
+          SITE_URL: ${{ inputs.site_url }}
+        run: node publisher/.github/scripts/exograph-quartz-build.mjs --engine engine --input snapshot/garden --output public --site-url "$SITE_URL" --action prepare
       - uses: actions/upload-pages-artifact@v3
         with:
           path: public
