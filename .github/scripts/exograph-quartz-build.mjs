@@ -107,6 +107,29 @@ try {
     const require = createRequire(path.join(engine, "package.json"));
     let YAML;
     try { YAML = require("yaml"); } catch { throw new Error("Install the Quartz project's dependencies before building (npm ci in that project)."); }
+    const { slugifyFilePath } = await import(pathToFileURL(require.resolve("@quartz-community/utils")).href);
+    const routes = new Map();
+    const register = (route, source) => {
+      const normalized = route.replace(/\/index(?:\.html)?$/, "").replace(/\.html$/, "");
+      const owner = routes.get(normalized);
+      if (owner && owner !== source) throw new Error(`Publication URL collision: ${owner} and ${source}`);
+      routes.set(normalized, source);
+    };
+    for (const file of before) {
+      if (["index.xml", "sitemap.xml", "static/contentIndex.json"].includes(file.path)) throw new Error(`Asset conflicts with a generated publication file: ${file.path}`);
+      register(slugifyFilePath(file.path), file.path);
+      if (!/\.md$/i.test(file.path)) continue;
+      const body = await readFile(path.join(input, file.path), "utf8");
+      const header = body.match(/^\ufeff?---(?:yaml|yml)?[ \t]*\r?\n((?:[\s\S]*?\r?\n)?)---[ \t]*(?:\r?\n|$)/);
+      const metadata = header ? YAML.parse(header[1]) ?? {} : {};
+      const aliases = metadata.aliases ?? metadata.alias ?? [];
+      for (const alias of Array.isArray(aliases) ? aliases : [aliases]) {
+        if (typeof alias !== "string") throw new Error(`Invalid publication alias: ${file.path}`);
+        const relative = path.posix.join(path.posix.dirname(file.path), alias);
+        if (relative.startsWith("../") || relative.startsWith("/")) throw new Error(`Publication alias escapes its site: ${file.path}`);
+        register(slugifyFilePath(relative), file.path);
+      }
+    }
     let config;
     for (const name of ["quartz.config.yaml", "quartz.plugins.json", "quartz.config.default.yaml", "quartz.plugins.default.json"]) {
       try { const source = await readFile(path.join(engine, name), "utf8"); config = name.endsWith(".json") ? JSON.parse(source) : YAML.parse(source); break; }
