@@ -5,6 +5,7 @@ date: 2025-11-15
 status: active
 tags:
   - agent-simulations
+modified: 2026-09-13T16:24:34.157Z
 ---
 
 # Valentine's Day in Miniverse
@@ -100,7 +101,7 @@ There's also a Jupyter notebook at `examples/smallville/valentines_party.ipynb` 
 
 ---
 
-*See also*: [[/research/artifacts/miniverse|Miniverse]], [[/research/logs/index|Research Log]]
+*See also*: [Miniverse](<miniverse.md>), [Research Log](<../logs/index.md>)
 
 **References**:
 - [Generative Agents paper](https://arxiv.org/abs/2304.03442) — The original Stanford work

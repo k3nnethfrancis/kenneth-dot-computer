@@ -58,7 +58,7 @@ The abstraction costs more than it provides.
 
 ## What Psychometric Profiles Actually Measure
 
-Our [[/research/artifacts/hexaco-profiling|HEXACO profiling]] experiments produced clear, differentiated profiles. Claude scores high on Honesty-Humility. GPT-4 shows different factor structure. These patterns are stable and replicable.
+Our [HEXACO profiling](<../artifacts/hexaco-profiling.md>) experiments produced clear, differentiated profiles. Claude scores high on Honesty-Humility. GPT-4 shows different factor structure. These patterns are stable and replicable.
 
 This is interesting as evidence of training artifacts. RLHF and constitutional AI create consistent patterns in how models respond to personality items. But interesting isn't useful. These profiles describe how models respond to a specific class of prompts, not how they behave across contexts.
 
@@ -80,4 +80,4 @@ Current bet: behavioral measurement plus organizational dynamics advances the re
 
 ---
 
-*See also*: [[/research/artifacts/hexaco-profiling|HEXACO Profiling]], [[/research/notes/behavioral-evals|Behavioral Evaluation Tools]], [[/research/index|Research Questions]]
+*See also*: [HEXACO Profiling](<../artifacts/hexaco-profiling.md>), Behavioral Evaluation Tools, [Research Questions](<../index.md>)

@@ -1,10 +1,11 @@
 ---
 title: The cybernetic organization
 date: 2025-09-09
-image: /images/posts/cybernetic-organization.jpeg
+image: ../images/posts/cybernetic-organization.jpeg
 tags:
   - ai
   - cybernetics
+modified: 2026-09-13T16:24:34.110Z
 ---
 
 # Cybernetic Organization
@@ -109,4 +110,4 @@ The organizations that thrive in the future will be thinking deeply about how AI
 
 ---
 
-*See also*: [[/research/notes/cybernetics|Cybernetics (Research Notes)]]
+*See also*: [Cybernetics (Research Notes)](<../research/notes/cybernetics.md>)

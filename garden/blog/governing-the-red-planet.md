@@ -1,11 +1,12 @@
 ---
 title: Governing the red planet
 date: 2022-04-15
-image: /images/posts/governing-the-red-planet.jpg
+image: ../images/posts/governing-the-red-planet.jpg
 readTime: 7 minutes
 tags:
-- space
-- web3
+  - space
+  - web3
+modified: 2026-09-13T16:24:34.111Z
 ---
 
 

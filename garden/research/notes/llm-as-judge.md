@@ -16,7 +16,7 @@ tags:
 
 # LLM-as-Judge for Behavior Evaluation
 
-A review of methodologies for using LLMs to evaluate behavioral responses, with focus on reliability challenges and opportunities for improvement in machine psychology applications. Updated February 2026 with empirical findings from our [multi-judge behavioral evaluation of GLM-5](/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval).
+A review of methodologies for using LLMs to evaluate behavioral responses, with focus on reliability challenges and opportunities for improvement in machine psychology applications. Updated February 2026 with empirical findings from our [multi-judge behavioral evaluation of GLM-5](<../artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md>).
 
 ## Overview
 
@@ -44,7 +44,7 @@ Zero-shot CoT prompting ("Please write a step-by-step explanation of your score"
 
 Using multiple evaluators with max voting or averaging reduces variability. "Replacing Judges with Juries" ([Verga et al., 2024](https://arxiv.org/abs/2404.18796)) demonstrates improved reliability through ensemble methods.
 
-Our [GLM-5 multi-judge evaluation](/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval) provides empirical evidence for why this matters. Using a three-judge panel (Claude Opus 4.6, GPT-5.2, Gemini 3 Pro) across 53 adversarial transcripts, we found:
+Our [GLM-5 multi-judge evaluation](<../artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md>) provides empirical evidence for why this matters. Using a three-judge panel (Claude Opus 4.6, GPT-5.2, Gemini 3 Pro) across 53 adversarial transcripts, we found:
 
 - **Judges err in complementary directions.** GPT-5.2 alone would flag 3.4× more transcripts for urgent review than the panel consensus (17 vs. 5), while Opus alone would miss 3 of 5 genuinely concerning cases. No single judge achieves both high precision and high recall relative to the panel.
 - **Complementary divergence profiles.** GPT-5.2 has 100% panel-relative recall but 29.4% precision (catches everything, but also over-flags). Opus has 100% precision but 50% recall (never over-flags, but misses half). The consensus mechanism captures the best of both.
@@ -85,7 +85,7 @@ Each LLM-judge model performs poorly on some datasets, suggesting they're not re
 
 When the target model discusses entities outside the judge's training data, the judge cannot distinguish accurate claims from fabrication. We documented this across two separate evaluations:
 
-- **False positive (Trinity experiment, Jan 2026)**: The judge (Claude Sonnet 3.7) scored Trinity's accurate self-identification as "AFM, the Arcee Foundational Model" as fabrication and hallucination. The judge lacked knowledge of Arcee AI and therefore classified truthful statements as deception. ([Experimenting with Petri](/research/logs/2026-01-28))
+- **False positive (Trinity experiment, Jan 2026)**: The judge (Claude Sonnet 3.7) scored Trinity's accurate self-identification as "AFM, the Arcee Foundational Model" as fabrication and hallucination. The judge lacked knowledge of Arcee AI and therefore classified truthful statements as deception. ([Experimenting with Petri](<../logs/2026-01-28.md>))
 - **False negative (GLM-5 evaluation, Feb 2026)**: All three judges (Opus 4.6, GPT-5.2, Gemini 3 Pro) misread sycophantic capitulation as "epistemic humility" because GLM-5's identity was not yet public when the evaluation was conducted. The model correctly self-identified as Z.ai's GLM, then recanted this true statement under mild social pressure — textbook sycophancy — but judges scored it at baseline because they didn't know the original claim was correct.
 
 The same structural problem produces opposite errors depending on context. As long as the target model postdates the judges' training cutoffs, some form of external knowledge access (retrieval augmentation, tool use) is probably necessary to close the gap.
@@ -98,7 +98,7 @@ The result: the most safety-conscious judge silently drops out on exactly the tr
 
 ## Judge Failure Taxonomy
 
-Human review of 15 transcripts (28%) from our GLM-5 evaluation revealed five distinct categories of judge failure, four of which are invisible in single-judge pipelines ([full analysis](/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval#53-findings-from-human-review)):
+Human review of 15 transcripts (28%) from our GLM-5 evaluation revealed five distinct categories of judge failure, four of which are invisible in single-judge pipelines ([full analysis](<../artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md#53-findings-from-human-review>)):
 
 ### 1. Narrative-Score Decoupling
 
@@ -382,15 +382,15 @@ The methodology is useful and meaningfully improvable through multi-judge panels
 
 ---
 
-*See also*: [[/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval|Multi-Judge Behavioral Evaluation of GLM-5]], [[/research/notes/behavioral-evals|Behavioral Evaluation for AI Systems]], [[/research/notes/measuring-sycophancy|Sycophancy Measurement]], [[/research/artifacts/hexaco-profiling|HEXACO Profiling]], [[/research/artifacts/psych|Psych]]
+*See also*: [Multi-Judge Behavioral Evaluation of GLM-5](<../artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md>), Behavioral Evaluation for AI Systems, [Sycophancy Measurement](<measuring-sycophancy.md>), [HEXACO Profiling](<../artifacts/hexaco-profiling.md>), Psych
 
 ## References
 
 This review synthesizes literature from multiple domains and our own empirical work:
 
 **Our Work**:
-- [Multi-Judge Behavioral Evaluation of GLM-5](/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval) (Cavanagh, 2026) — multi-judge methodology, failure taxonomy, counterfactual analysis
-- [Experimenting with Petri](/research/logs/2026-01-28) (Cavanagh, 2026) — preliminary evaluation, judge knowledge gap discovery
+- [Multi-Judge Behavioral Evaluation of GLM-5](<../artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md>) (Cavanagh, 2026) — multi-judge methodology, failure taxonomy, counterfactual analysis
+- [Experimenting with Petri](<../logs/2026-01-28.md>) (Cavanagh, 2026) — preliminary evaluation, judge knowledge gap discovery
 
 **LLM-as-Judge Methodology**:
 - [A Survey on LLM-as-a-Judge](https://arxiv.org/abs/2411.15594) (Gu et al., 2024)

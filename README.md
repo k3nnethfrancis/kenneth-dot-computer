@@ -1,96 +1,31 @@
 # kenneth.computer
 
-Personal website and blog built with [Quartz](https://quartz.jzhao.xyz/).
+This repository holds the public website's sanitized Markdown and assets in
+`garden/`, plus its reviewed GitHub Pages workflow and shared Quartz build runner. The source notes live in the
+private shoshin-codex workspace. Quartz and the custom theme live separately in
+[k3nnethfrancis/quartz](https://github.com/k3nnethfrancis/quartz).
 
-## Setup
+Exo prepares a sanitized snapshot from the selected publication folder. An
+explicit Publish action advances the `publication` branch with a normal commit,
+then dispatches `.github/workflows/exograph-publish.yml` on `main` with the exact
+content and engine commit IDs. Publishing does not create a branch for every
+update, import private note history, or deploy automatically on pushes.
 
-```bash
-# Clone with submodules
-git clone --recursive https://github.com/k3nnethfrancis/kenneth-dot-computer.git
-cd kenneth-dot-computer
+The `publication` branch is the latest publication history; `main` contains the
+reviewed workflow, runner, and initial migration snapshot. Failed deployment commits remain
+available for inspection. Deployment success requires a completed Pages run and
+its matching receipt. Do not edit the exported snapshots as canonical notes.
 
-# If you forgot --recursive
-git submodule update --init --recursive
+## Rollback
 
-# Install dependencies
-cd quartz
-npm install
-```
+The previous Quartz v4 site, its submodule, and its workflow remain in Git history
+at `ae6d68d`. The workflow-only transition is `94f36bc`. Restore either into a
+separate branch for review if rollback is needed; no history has been rewritten.
 
-## Development
+## Private engine repositories
 
-```bash
-cd quartz
-npx quartz build --serve --directory ../garden
-```
-
-Site runs at `http://localhost:8080`
-
-## Project Structure
-
-```
-kenneth-dot-computer/
-├── garden/          ← Site content (markdown, images)
-│   ├── index.md     ← Home page
-│   ├── blog/        ← Blog posts
-│   ├── artifacts/   ← Project pages
-│   ├── notes/       ← Research notes
-│   │   ├── research-log/
-│   │   └── machine-psychology/
-│   └── images/
-└── quartz/          ← Quartz (git submodule)
-```
-
-## Editing Content
-
-Edit markdown files in `garden/`, then:
-
-```bash
-git add garden/
-git commit -m "Update content"
-git push
-```
-
-### Shareable previews
-
-Posts in `garden/blog/previews/` can be shared while they are still in progress.
-Use both frontmatter flags explicitly:
-
-```yaml
-draft: true
-preview: true
-```
-
-This renders an addressable page under `/blog/previews/` while keeping it out of
-the Explorer, search index, graph, RSS feed, sitemap, tags, and folder listings.
-`draft: true` without `preview: true` remains unpublished.
-
-## Editing Theme
-
-The `quartz/` folder is a submodule pointing to [k3nnethfrancis/quartz](https://github.com/k3nnethfrancis/quartz).
-
-```bash
-cd quartz
-# Make changes to styles, config, etc.
-git add . && git commit -m "Update theme" && git push
-
-# Update reference in parent repo
-cd ..
-git add quartz && git commit -m "Update quartz" && git push
-```
-
-Key customization files:
-- `quartz/quartz.config.ts` - Site config, colors, fonts
-- `quartz/quartz/styles/custom.scss` - Theme styles
-
-## Build
-
-```bash
-cd quartz
-npx quartz build --directory ../garden
-# Output: quartz/public/
-```
-
-## License
-
-Content © Kenneth Francis. Quartz is MIT licensed.
+Public Quartz engines use the workflow's normal GitHub token. For a private
+engine in another repository, set the site repository's `EXOGRAPH_ENGINE_TOKEN`
+Actions secret to a token with read access to that engine. The checkout uses this
+optional token without persisting its credentials. The local publishing session
+also needs GitHub CLI access to the selected site and engine repositories.

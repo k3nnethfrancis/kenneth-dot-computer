@@ -1,5 +1,7 @@
 ---
 title: kenneth.computer
+created: 2026-08-06T16:31:56.507Z
+modified: 2026-09-13T16:24:34.154Z
 ---
 
 <style>
@@ -38,13 +40,13 @@ title: kenneth.computer
 
 <div class="profile-section">
   <div class="profile-image-container">
-    <img src="/images/pfp/headshot.png" alt="Profile picture" />
+    <img src="images/pfp/headshot.png" alt="Profile picture" />
   </div>
   <div class="profile-info">
     <h1>> kenneth_</h1>
     <p class="subtitle">i/o psychologist · ai developer</p>
     <div class="social-links">
-      <a href="/blog" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
+      <a href="blog/index.md" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
       </a>
       <a href="https://github.com/k3nnethfrancis" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
@@ -53,7 +55,7 @@ title: kenneth.computer
       <a href="https://x.com/local0ptimist" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
       </a>
-      <a href="/index.xml" aria-label="RSS Feed" style="text-decoration: none; background: none; border: none;">
+      <a href="index.xml" aria-label="RSS Feed" style="text-decoration: none; background: none; border: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg>
       </a>
     </div>
@@ -74,7 +76,7 @@ I didn't last long in academia. By 2021, I moved to California to work for Space
 
 During that time, I got into building software. By the end of 2024, I left to focus full-time on applied AI. In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators and brands.
 
-One of my core beliefs is that you should be pursuing an ever-growing list of side quests. Most recently, I've been learning to do [AI research](/research). I'm particularly interested in the framings of [machine psychology](/research/notes/machine-psychology/) and [cybernetics](/research/notes/cybernetics) applied to multi-agent systems, which I intend to write more about.
+One of my core beliefs is that you should be pursuing an ever-growing list of side quests. Most recently, I've been learning to do [AI research](<research/index.md>). I'm particularly interested in the framings of [machine psychology](<research/notes/machine-psychology.md>) and [cybernetics](<research/notes/cybernetics.md>) applied to multi-agent systems, which I intend to write more about.
 
 If you'd like to connect, the best way to get in touch is on [X](https://x.com/local0ptimist). I'm always looking for new collaborators and compute sponsors.
 
@@ -82,13 +84,13 @@ If you'd like to connect, the best way to get in touch is on [X](https://x.com/l
 
 ---
 
-## <a href="/research/artifacts/technical-reports" aria-label="Technical Reports" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a> **Technical Reports**
+## <a href="research/artifacts/technical-reports" aria-label="Technical Reports" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a> **Technical Reports**
 
-- [Multi-judge behavioral evaluation of GLM-5](/research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval)
+- [Multi-judge behavioral evaluation of GLM-5](<research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md>)
 
-## <a href="/blog" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Posts**
+## <a href="blog/index.md" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Posts**
 
-- [The cybernetic organization](/blog/cybernetic-organization)
-- [From tool AIs to agents](/blog/from-tool-ais-to-agents)
-- [On taking GPT-4 out of the box](/blog/on-taking-gpt4-out-of-the-box)
-- [Work systems and the extended mind](/blog/extended-mind)
+- [The cybernetic organization](<blog/cybernetic-organization.md>)
+- [From tool AIs to agents](<blog/from-tool-ais-to-agents.md>)
+- [On taking GPT-4 out of the box](<blog/on-taking-gpt4-out-of-the-box.md>)
+- [Work systems and the extended mind](<blog/extended-mind.md>)

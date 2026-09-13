@@ -6,6 +6,7 @@ tags:
   - tools
   - multi-agent
   - simulation
+modified: 2026-09-13T16:24:34.156Z
 ---
 
 # Miniverse
@@ -30,4 +31,4 @@ The [Stanford Generative Agents paper](https://arxiv.org/pdf/2304.03442) ran 25 
 
 ---
 
-*See also*: [[/research/artifacts/valentines-replication|Valentine's Replication]]
+*See also*: [Valentine's Replication](<valentines-replication.md>)

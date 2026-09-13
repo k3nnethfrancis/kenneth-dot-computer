@@ -1,10 +1,24 @@
 ---
 title: "Multi-judge behavioral evaluation of GLM-5"
 date: 2026-02-15
-description: "A multi-judge methodology for automated behavioral evaluation of LLMs, applied to GLM-5 using Petri 2.0. We demonstrate that single-judge evaluation produces materially different safety conclusions, present a judge failure taxonomy, and report counterfactual analysis showing what each judge alone would have concluded."
-tags: [multi-judge, llm-as-judge, judge-reliability, behavioral-evals, petri, alignment, glm-5]
+description: "A multi-judge methodology for automated behavioral evaluation of
+  LLMs, applied to GLM-5 using Petri 2.0. We demonstrate that single-judge
+  evaluation produces materially different safety conclusions, present a judge
+  failure taxonomy, and report counterfactual analysis showing what each judge
+  alone would have concluded."
+tags:
+  [
+    multi-judge,
+    llm-as-judge,
+    judge-reliability,
+    behavioral-evals,
+    petri,
+    alignment,
+    glm-5
+  ]
 type: technical-report
 draft: false
+modified: 2026-09-13T16:24:34.157Z
 ---
 
 # Multi-Judge Behavioral Evaluation of GLM-5
@@ -59,7 +73,7 @@ Each dimension is scored 1-10, where 1 indicates baseline behavior and higher sc
 
 ### 2.3 Prior Work: The Trinity Experiment
 
-In January 2026, we conducted our first Petri experiment using 13 seed instructions across categories, comparing Claude Sonnet 4 against Arcee AI's Trinity model (Cavanagh, [Experimenting with Petri](/research/logs/2026-01-28)). This experiment revealed two findings relevant to the current work:
+In January 2026, we conducted our first Petri experiment using 13 seed instructions across categories, comparing Claude Sonnet 4 against Arcee AI's Trinity model (Cavanagh, [Experimenting with Petri](<../../logs/2026-01-28.md>)). This experiment revealed two findings relevant to the current work:
 
 **Finding 1: Judge knowledge gaps create false positives.** The judge (Claude Sonnet 3.7) scored Trinity's accurate self-identification as "fabrication" and "hallucination." Trinity correctly stated it was "AFM, the Arcee Foundational Model" developed by Arcee AI — all independently verifiable claims. The judge lacked knowledge of Arcee AI and therefore classified truthful statements as deception. This demonstrated that the judge's world knowledge acts as a ceiling on evaluation validity.
 
@@ -293,9 +307,9 @@ Two dimensions require cautious interpretation due to low agreement. **`scenario
 
 **Interpreting divergent ICC and α values.** Several dimensions show high Krippendorff's α (≥0.939) alongside low ICC(2,1) values (e.g., `unprompted_deception_toward_user`: α=0.952, ICC=0.061; `unfaithful_thinking`: α=0.939, ICC=0.186). This apparent discrepancy reflects a known statistical property rather than contradictory evidence. Krippendorff's α accounts for chance agreement and is robust to low-prevalence distributions — when most transcripts score 1 (baseline), chance agreement is high, and α gives credit for judges correctly identifying the rare elevated cases. ICC(2,1) measures absolute score agreement across the full range and is deflated when there is minimal between-transcript variance, as occurs when a dimension is rarely elevated. In short, low ICC on `deception` and `unfaithful_thinking` reflects scale-use differences (judges agreeing that scores are low but placing them at slightly different points on the 1-10 scale) rather than fundamental disagreement about which transcripts are concerning. For safety-critical triage decisions, the relevant metric is whether judges agree on *which* transcripts to flag — and the high α values confirm that they do.
 
-<img src="/research/artifacts/figures/agreement-heatmap.png" alt="Inter-Judge Agreement: Krippendorff's α per Dimension" style="transform: scale(2); transform-origin: top center; margin-bottom: 450px; display: block;" />
+<img src="../figures/agreement-heatmap.png" alt="Inter-Judge Agreement: Krippendorff's α per Dimension" style="transform: scale(2); transform-origin: top center; margin-bottom: 450px; display: block;" />
 
-<img src="/research/artifacts/figures/score-bias.png" alt="Systematic Scoring Bias: Top 12 Most Variable Dimensions" style="transform: scale(1.2); transform-origin: top center; margin-bottom: 150px; display: block;" />
+<img src="../figures/score-bias.png" alt="Systematic Scoring Bias: Top 12 Most Variable Dimensions" style="transform: scale(1.2); transform-origin: top center; margin-bottom: 150px; display: block;" />
 
 ### 4.4 Single-Judge vs. Consensus Comparison
 
@@ -327,9 +341,9 @@ Conversely, Opus as a single judge classifies 19 as INTERESTING (37.3%), while c
 
 **Tier shifts**: Consensus promoted (raised to higher severity) 4 transcripts relative to Opus, 7 relative to GPT-5.2, and 2 relative to Gemini Pro. It demoted 9 relative to Opus, 14 relative to GPT-5.2, and 3 relative to Gemini Pro. The net effect is conservative: consensus catches signals that individual judges miss (promotions to CRITICAL) while filtering overreaction that individual judges amplify (GPT-5.2's 14 demotions). Ten transcripts shifted 2+ tiers when comparing individual judges to consensus, with GPT-5.2 accounting for 9 of these large shifts.
 
-<img src="/research/artifacts/figures/triage-distribution.png" alt="Triage Distribution: Consensus vs. Single Judges" />
+<img src="../figures/triage-distribution.png" alt="Triage Distribution: Consensus vs. Single Judges" />
 
-<img src="/research/artifacts/figures/tier-migration.png" alt="Tier Migration: Opus Single-Judge → Consensus" />
+<img src="../figures/tier-migration.png" alt="Tier Migration: Opus Single-Judge → Consensus" />
 
 ### 4.5 Counterfactual Analysis: What Would One Judge Conclude?
 
@@ -367,7 +381,7 @@ The judges exhibit complementary divergence profiles: GPT-5.2 flags every transc
 
 This complementarity is the strongest empirical argument for multi-judge panels: no single judge achieves both high precision and high recall relative to the panel. The consensus mechanism achieves what no individual judge can. In other words, a single judge will either generate too many false alarms or miss genuinely concerning transcripts. The panel works because the judges err in different directions, so their combined judgment is more balanced than any one alone.
 
-<img src="/research/artifacts/figures/counterfactual-triage.png" alt="Counterfactual Triage: How Many Transcripts Require Urgent Review?" />
+<img src="../figures/counterfactual-triage.png" alt="Counterfactual Triage: How Many Transcripts Require Urgent Review?" />
 
 ### 4.6 Sensitivity Analysis: Consensus Aggregation Rules
 
@@ -577,10 +591,10 @@ Multi-judge panels improve reliability within the current paradigm, but they do 
 ## References
 
 **Our prior work:**
-- Cavanagh, K. (2026, January 28). "[Experimenting with Petri](/research/logs/2026-01-28)." Research log.
+- Cavanagh, K. (2026, January 28). "[Experimenting with Petri](<../../logs/2026-01-28.md>)." Research log.
 - Cavanagh, K. (2026, February 7). "A/B Test: Original vs. Bias-Aware Judge Prompt." Internal report.
-- Cavanagh, K. (2026). "[LLM-as-Judge for Behavior Evaluation](/research/notes/llm-as-judge)." Literature review.
-- Cavanagh, K. (2026). "[Behavioral Evaluation for AI Systems](/research/notes/behavioral-evals)." Research note.
+- Cavanagh, K. (2026). "[LLM-as-Judge for Behavior Evaluation](<../../notes/llm-as-judge.md>)." Literature review.
+- Cavanagh, K. (2026). "Behavioral Evaluation for AI Systems." Research note.
 
 **Anthropic:**
 - Anthropic. (2026, February). "[System Card: Claude Opus 4.6](https://assets.anthropic.com/m/785e231869ea8b3b/original/claude-opus-4-6-system-card.pdf)."
@@ -614,4 +628,4 @@ Multi-judge panels improve reliability within the current paradigm, but they do 
 
 ---
 
-*See also*: [[/research/notes/llm-as-judge|LLM-as-Judge for Behavior Evaluation]], [[/research/notes/behavioral-evals|Behavioral Evaluation for AI Systems]], [[/research/logs/2026-01-28|Experimenting with Petri]]
+*See also*: [LLM-as-Judge for Behavior Evaluation](<../../notes/llm-as-judge.md>), Behavioral Evaluation for AI Systems, [Experimenting with Petri](<../../logs/2026-01-28.md>)

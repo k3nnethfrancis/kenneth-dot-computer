@@ -1,13 +1,15 @@
 ---
 title: Self-Improving Business Systems
 date: '2026-07-11'
-image: /images/posts/self-improving-business-systems/hero-v14a-recursive-field.png
+image: ../../images/posts/self-improving-business-systems/hero-v14a-recursive-field.png
 draft: true
 preview: true
 tags:
   - ai
   - cybernetics
   - organizations
+unlisted: true
+modified: 2026-09-13T16:24:34.111Z
 ---
 
 # Self-Improving Business Systems
@@ -35,14 +37,14 @@ Unfortunately, this is what the rest of the economy lacks. Revenue, retention, a
 
 ## The local regime
 Organizations are adaptive systems that improve through feedback. At scale, they are a network of subsystems called business units, each of which comprises a work system that executes tasks to achieve goals, which trace back to the balance sheet with varying fidelity. Tasks are the smallest units of execution in a work system. Some tasks are predictable and repeatable, while others are emergent from the environment. Agents doing work on predictable repeatable tasks are useful, but they will not enable businesses to improve their performance beyond what the local regime permits.
-![A single organization node rests on a smaller local peak while a taller peak rises beyond the intervening valley](/images/posts/self-improving-business-systems/local-optimum-v6.svg)
+![A single organization node rests on a smaller local peak while a taller peak rises beyond the intervening valley](<../../images/posts/self-improving-business-systems/local-optimum-v6.svg>)
 [Gwern](https://www.lesswrong.com/posts/bX7q9NcoGpb5KdZzQ/if-i-wanted-to-spend-way-more-on-ai-what-would-i-spend-it-on) offers a useful way to see the obstacle. For decades the only general intelligence you could hire was a person, so every workflow, role, and handoff was cut to a human shape. A company therefore ends up full of human-shaped holes and almost no LLM-shaped ones, because any opening a model could simply drop into would, by now, already have a person in it. To put it simply, the problem is less about LLM capability than it is about system design, and modern organizational systems were not designed for LLMs.
 
 The challenge that lies ahead of us then is somewhat counterintuitive. To cross the chasm into a more productive "AI-native" regime, we may experience a loss in productivity until we can foster the organizational learning necessary to fully adapt to the new world.
 
 More concretely, we can think about a business process as a graph of people and technology connected together by the flow of information. For the work to flow through it, many things have to go right. In the old human-centric regime, learning how to do something the correct way did not require writing down a standard operating procedure for every single task or workflow, let alone creating an eval to keep the system aligned [though, to be fair, performance reviews are a form of human evals, but this responsibility fell on management]. Generally, you showed someone something once or twice, then they started doing it on their own, albeit somewhat poorly perhaps until they learned to self-improve.
 
-![A bounded business process held together by human operators, tools, and handoffs, with no agent-ready interface](/images/posts/self-improving-business-systems/human-shaped-work-system-v1.svg)
+![A bounded business process held together by human operators, tools, and handoffs, with no agent-ready interface](<../../images/posts/self-improving-business-systems/human-shaped-work-system-v1.svg>)
 
 Agents today do not work like this. They require writing careful instructions that take iterations to ensure they are not misspecified and new forms of evaluations that look more like behavioral science than user acceptance testing. The economic potential of agents in the organization seems theoretically uncapped, but without AI-native teams capable of both identifying the right problems and redesigning the work, an organization's AI productivity gains might as well be neutralized as the rest of its competition experiences the same gains when the labs ship new models. A competitive advantage in this regime can therefore look quite simple: the ability to continuously improve AI systems by embedding and improving upon tacit knowledge through feedback loops that enable you to keep one step ahead of the frontier.
 
@@ -60,7 +62,7 @@ At a minimum, the loop needs four things:
 
 Verification closes the loop within a run. The outcome signal closes the loop between runs.
 
-![An agent works inside a bounded business system, where a trigger starts work, internal checks guide it, and a measurable outcome returns a learning signal](/images/posts/self-improving-business-systems/finding-useful-signal-network-v2.svg)
+![An agent works inside a bounded business system, where a trigger starts work, internal checks guide it, and a measurable outcome returns a learning signal](<../../images/posts/self-improving-business-systems/finding-useful-signal-network-v2.svg>)
 
 Triggers and outcomes are external signals: one starts the run, while the other tells us how it performed. Verification is internal to the work, guiding the agent toward an acceptable result. Automating a complete business process requires both. Without verification, the agent cannot reliably complete the work; without an outcome signal, the system cannot tell whether it is optimizing the right thing.
 
@@ -78,13 +80,13 @@ In these cases, it is important to ensure agent builders can collaborate with do
 
 Best to get that loop started fast. This can start with controlled UAT, but the agent traces from these early iterations should become a dataset. It becomes the job of the tastemaker to turn tacit judgment into rubrics, golden sets, and verifiers that are increasingly embedded in an [agent behavior spec](https://www.braintrust.dev/blog/behavior-specs).
 
-![Repeated human judgments leave traces that become a reusable verifier, giving an agent a stable edge into the work system](/images/posts/self-improving-business-systems/finding-useful-signal-verifier-v1.svg)
+![Repeated human judgments leave traces that become a reusable verifier, giving an agent a stable edge into the work system](<../../images/posts/self-improving-business-systems/finding-useful-signal-verifier-v1.svg>)
 
 This suggests that skills like prompt engineering and agent evaluation will become increasingly important over the next era. Humans will be needed to orchestrate agents, judge their outputs, and update them methodically, leaning on domain expertise and taste to prevent [Goodharting](https://en.wikipedia.org/wiki/Goodhart%27s_law) and keeping systems aligned. The goal however, is to keep humans from being the bottlenecks and enable them to be systems architects.
 
 ## Self-improving business systems
 At the top of the hierarchy, organizations have slow feedback cycles. Finance doesn't learn what investments worked until the books are closed. Without a clear signal to improve the organization's bottom line, we need to look for an intervention point at lower levels of the hierarchy.
-![A network becomes increasingly connected from individuals through teams and business units to the organization, then opens into the sparse environment; the business unit is highlighted as the bounded system that owns an outcome](/images/posts/self-improving-business-systems/organizational-ecology-v4.svg)
+![A network becomes increasingly connected from individuals through teams and business units to the organization, then opens into the sparse environment; the business unit is highlighted as the bounded system that owns an outcome](<../../images/posts/self-improving-business-systems/organizational-ecology-v4.svg>)
 Most adoption strategies target individuals and teams applying AI at the task level. While these intervention strategies can enable productivity gains, the real gains come from engineering business outcomes.
 
 In my view, this suggests the ideal intervention point is at the level of the business unit: the smallest set of connections across the organizational network with ownership over a business outcome.
@@ -93,7 +95,7 @@ Sometimes this can be a single team, but often business outcomes are the result 
 
 To automate the whole system, we need to be able to verify our agent completed a business process up to specification. With the right data infrastructure, we can find signals at all of these levels. It is at the level where we can no longer get useful signal where we place the human-in-the-loop.
 
-![Agentic work expands from a single task, to a coordinated workflow, to a business process governed by feedback](/images/posts/self-improving-business-systems/levels-of-agentic-work-v1.svg)
+![Agentic work expands from a single task, to a coordinated workflow, to a business process governed by feedback](<../../images/posts/self-improving-business-systems/levels-of-agentic-work-v1.svg>)
 
 
 This is [loop engineering](https://addyosmani.com/blog/loop-engineering/) applied one level up from the codebase. A software factory is the cleanest example of the pattern: an issue triggers work, an agent operates in a repository, and tests, logs, builds, and deployments tell us what happened.
@@ -108,7 +110,7 @@ From an AI adoption standpoint, we might call this *middle-out transformation*. 
 
 This empowers the people on the team by moving them up from doing the rote work to running the system, and it pulls the business out of the local optimum it has settled into. Repeat that across functions and you have transformed the organization, without ever staging the demolition that “AI transformation” usually implies.
 ## Agentic business loops
-![The inner agent observe-reason-act loop and outer human monitor-evaluate-steer loop](/images/posts/self-improving-business-systems/agent-human-loops-v4.svg)
+![The inner agent observe-reason-act loop and outer human monitor-evaluate-steer loop](<../../images/posts/self-improving-business-systems/agent-human-loops-v4.svg>)
 
 For an ABL to improve a business process, the system needs the following:
 - External trigger: a request, schedule, event, or changing condition tells the system when there is work to do.
@@ -135,7 +137,7 @@ Moving beyond this regime occurs when workers begin codifying their judgement in
 
 As human responsibility moves outward, tooling will need to move with it. We still need better ways to build agents, evaluate them, and architect broader systems composed by their work. While this is an ongoing development being coordinated across the AI industry, the functions needed for the next generation of organizations are already becoming clear.
 
-![Human responsibility moves outward from shaping an agent, to shaping its judge, to shaping the broader business system](/images/posts/self-improving-business-systems/future-of-work-v2.svg)
+![Human responsibility moves outward from shaping an agent, to shaping its judge, to shaping the broader business system](<../../images/posts/self-improving-business-systems/future-of-work-v2.svg>)
 
 Builders translate business processes into the context, tools, prompts, and skills required to perform the work. Evaluators turn domain expertise into prompts, rubrics, golden sets, and verifiers that steer agents to improvement. Architects compose the broader agent system: the loops and graphs that define how business processes across the organization all string together,
 

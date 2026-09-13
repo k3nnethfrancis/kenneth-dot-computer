@@ -82,7 +82,7 @@ Chain-of-thought prompting improves performance, but:
 
 **Critical warning**: Properties like personality, morality, clinical disorders are "famously sensitive to prompting." LLMs can simulate different personas when prompted differently.
 
-Self-reports should be understood "as a property of a specific system prompt" not as fundamental model characteristics. This is directly relevant to our HEXACO work - see [HEXACO Personality Profiles](/research/artifacts/hexaco-profiling).
+Self-reports should be understood "as a property of a specific system prompt" not as fundamental model characteristics. This is directly relevant to our HEXACO work - see [HEXACO Personality Profiles](<../artifacts/hexaco-profiling.md>).
 
 ## Behavioral vs. Mechanistic Interpretability
 
@@ -130,4 +130,4 @@ This paper provides the theoretical foundation for our approach:
 
 ---
 
-*See also*: [[/research/index|Research Notes]], [[/research/notes/behavioral-evals|Behavioral Evaluation Tools]], [[/research/artifacts/hexaco-profiling|HEXACO Profiling]], [[/research/notes/llm-psychometrics|LLM Psychometrics]], [[/research/logs/index|Research Log]]
+*See also*: [Research Notes](<../index.md>), Behavioral Evaluation Tools, [HEXACO Profiling](<../artifacts/hexaco-profiling.md>), [LLM Psychometrics](<llm-psychometrics.md>), [Research Log](<../logs/index.md>)
