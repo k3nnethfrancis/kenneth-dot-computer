@@ -1,0 +1,8 @@
+{
+  "schemaVersion": 1,
+  "repository": "k3nnethfrancis/kenneth-dot-computer",
+  "contentDirectory": "garden",
+  "sourceEngine": {
+    "commit": "ed930a8a1dffeb781bc6e82a9dbe4757a9f2edb5"
+  }
+}
