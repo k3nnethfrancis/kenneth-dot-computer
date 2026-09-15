@@ -1,8 +1,0 @@
-{
-  "contentDirectory": "garden",
-  "publicationBranch": "publication",
-  "workflow": "exograph-publish.yml",
-  "workflowRef": "main",
-  "engineRepository": "k3nnethfrancis/quartz",
-  "siteUrl": "https://kenneth.computer"
-}
