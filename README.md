@@ -1,17 +1,16 @@
-# Quartz v5
+# kenneth.computer
 
-> “[One] who works with the door open gets all kinds of interruptions, but [they] also occasionally gets clues as to what the world is and what might be important.” — Richard Hamming
+This is the self-contained website repository managed by Exograph.
 
-Quartz is a set of tools that helps you publish your [digital garden](https://jzhao.xyz/posts/networked-thought) and notes as a website for free.
+- `quartz/`, `plugins/`, and `quartz.config.yaml`: Quartz 5 and the customized site design.
+- `garden/`: exported publishable notes and assets. Edit the original notes in Exograph.
+- `.github/workflows/exograph-publish.yml`: builds an exact reviewed publication and deploys GitHub Pages.
+- `scripts/`: site-specific build compatibility and regression checks.
+- `exograph-site.json`: managed-site identity; `exograph-publishing.json`: generated route definitions.
 
-🔗 Read the documentation and get started: https://quartz.jzhao.xyz/
+Use Exograph Settings → Publishing to customize, prepare, and publish. Changes do not deploy automatically.
+The local editable checkout lives under Exograph's `published-sites/` directory.
+Dependencies are pinned by `package-lock.json`; use Node 24 and `npm ci`.
+See [PUBLISHING.md](PUBLISHING.md) for build and content-boundary details.
 
-[Join the Discord Community](https://discord.gg/cRFFHYye7t)
-
-## Sponsors
-
-<p align="center">
-  <a href="https://github.com/sponsors/jackyzha0">
-    <img src="https://cdn.jsdelivr.net/gh/jackyzha0/jackyzha0/sponsorkit/sponsors.svg" />
-  </a>
-</p>
+Quartz is MIT licensed; see [LICENSE.txt](LICENSE.txt).

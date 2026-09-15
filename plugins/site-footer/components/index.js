@@ -11,7 +11,7 @@ export const Footer = (userOpts = {}) => {
         "p",
         null,
         "Created with ",
-        h("a", { href: "https://github.com/k3nnethfrancis/quartz" }, "Quartz v5.0.0"),
+        h("a", { href: "https://github.com/jackyzha0/quartz" }, "Quartz v5.0.0"),
         " | Kenneth Francis Cavanagh ",
         h(
           "a",

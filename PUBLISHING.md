@@ -1,6 +1,6 @@
-# Kenneth publishing engine
+# Kenneth website publishing
 
-This standalone Quartz 5 checkout runs outside Note Roots. `publishing-parity`
+This managed website checkout contains Quartz 5, the custom design, exported garden, and the Pages workflow. It runs outside Note Roots. `publishing-parity`
 includes upstream v5 `f1fba3fc55cbf60a60a5d09c95a49c042cdab63a`, the custom
 site profile from the prior migration, and verified corrections against the
 deployed v4 site source `ae6d68d945106783abba8be1ef574edad2ac3c7d` / Quartz
