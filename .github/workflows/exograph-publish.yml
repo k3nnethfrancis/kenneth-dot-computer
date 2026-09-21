@@ -37,12 +37,12 @@ jobs:
           [[ "$SNAPSHOT" =~ ^[0-9a-f]{40}$ ]]
           [[ "$ENGINE" =~ ^[0-9a-f]{40}$ ]]
           node -e 'const u=new URL(process.env.SITE_URL);if(u.protocol!=="https:"||u.username||u.password||u.search||u.hash)process.exit(1)'
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           ref: ${{ inputs.snapshot_commit }}
           path: snapshot
           persist-credentials: false
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 24
       - run: npm ci
@@ -69,7 +69,7 @@ jobs:
         env:
           SITE_URL: ${{ inputs.site_url }}
         run: node snapshot/.github/scripts/exograph-quartz-build.mjs --engine snapshot --input snapshot/garden --output public --site-url "$SITE_URL" --action prepare
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: public
   deploy:
@@ -79,7 +79,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/deploy-pages@v4
+      - uses: actions/deploy-pages@v5
         id: deployment
 
       - name: Record completed deployment
@@ -90,7 +90,7 @@ jobs:
           RUN_ID: ${{ github.run_id }}
         run: |
           node -e 'require("fs").writeFileSync("deployment.json", JSON.stringify({snapshotCommit:process.env.SNAPSHOT_COMMIT,engineCommit:process.env.ENGINE_COMMIT,deploymentUrl:process.env.DEPLOYMENT_URL,runId:process.env.RUN_ID}))'
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: exograph-deployment
           path: deployment.json
