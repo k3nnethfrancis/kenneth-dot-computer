@@ -1,7 +1,7 @@
 ---
 title: kenneth.computer
 created: 2026-08-06T16:31:56.507Z
-modified: 2026-09-13T16:24:34.154Z
+modified: 2026-10-21T04:04:55.330Z
 ---
 
 <style>
@@ -44,7 +44,7 @@ modified: 2026-09-13T16:24:34.154Z
   </div>
   <div class="profile-info">
     <h1>> kenneth_</h1>
-    <p class="subtitle">i/o psychologist · ai developer</p>
+    <p class="subtitle">i/o psychologist · ai engineer</p>
     <div class="social-links">
       <a href="blog/index.md" aria-label="Blog" style="text-decoration: none; background: none; border: none;">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
@@ -64,23 +64,19 @@ modified: 2026-09-13T16:24:34.154Z
 
 ---
 
-I'm a techno-optimist focused on human-AI coordination.
+I’m a psychologist and engineer interested in machine intelligence. Currently, I'm forward deployed at Google DeepMind, designing evals with startups and researchers who are advancing the frontier.
 
-Currently, I'm on the field team at [Glean](https://glean.com/) helping customers design agents and develop organizational strategies for navigating the accelerated frontier. 
+Formally, I have a master’s degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint as an adjunct, teaching sociotechnical theory.
 
-One of my driving curiosities relates to how we can design sociotechnical systems that maximize human potential and control in an increasingly multi-agent world.
+I didn’t last long in academia. In 2021, I moved to California to work for SpaceX, where I led people analytics and research initiatives within our operations engineering unit.
 
-Formally, I have a master's degree in industrial/organizational psychology from CUNY Brooklyn College, where I had a brief stint as an adjunct, teaching sociotechnical theory.
+During that time, I got into building software. In 2024, I left to focus full-time on applied AI. Over the following year, my team and I bootstrapped an [**AI product and consulting studio**](https://www.agency42.co/) from 0-1, which built social agents, digital twins, and AI characters for creators and brands. In late 2025, I joined Glean to work on enterprise AI deployments and strategy, before ultimately joining DeepMind in 2026.
 
-I didn't last long in academia. By 2021, I moved to California to work for SpaceX, where I led people analytics and research initiatives within our operations engineering unit. 
+One of my core beliefs is that you should be pursuing an ever-growing list of side quests. This past year, I’ve been learning to do [**AI research**](https://kenneth.computer/research/). I’m particularly interested in the framings of [**machine psychology**](https://kenneth.computer/research/notes/machine-psychology) and [**cybernetics**](https://kenneth.computer/research/notes/cybernetics) applied to multi-agent systems. As a proponent of open source, I try to publish my [thoughts](https://kenneth.computer/blog/) and [code](https://github.com/k3nnethfrancis) when I can. Most recently, I built [Carla](https://x.com/local0ptimist/status/2104604636095373674?s=20) to experiment with base models and explore latent space.
 
-During that time, I got into building software. By the end of 2024, I left to focus full-time on applied AI. In a year, my team and I bootstrapped an [AI product and consulting studio](https://www.agency42.co) from 0-1, which built social agents, digital twins, and AI characters for creators and brands.
+I’m always up for comparing notes with people building and exploring in this space. You can find me on [**X**](https://x.com/local0ptimist).
 
-One of my core beliefs is that you should be pursuing an ever-growing list of side quests. Most recently, I've been learning to do [AI research](<research/index.md>). I'm particularly interested in the framings of [machine psychology](<research/notes/machine-psychology.md>) and [cybernetics](<research/notes/cybernetics.md>) applied to multi-agent systems, which I intend to write more about.
-
-If you'd like to connect, the best way to get in touch is on [X](https://x.com/local0ptimist). I'm always looking for new collaborators and compute sponsors.
-
-— [local0ptimist](https://x.com/local0ptimist)
+— **local0ptimist**
 
 ---
 
