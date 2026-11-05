@@ -1,7 +1,7 @@
 ---
 title: kenneth.computer
 created: 2026-08-06T16:31:56.507Z
-modified: 2026-11-05T05:45:37.417Z
+modified: 2026-11-05T05:51:03.121Z
 ---
 
 <style>
@@ -72,11 +72,7 @@ I didn’t last long in academia. In 2021, I moved to California to work for Spa
 
 During that time, I got into building software. In 2024, I left to focus full-time on applied AI. Over the following year, my team and I bootstrapped an [**AI product and consulting studio**](https://www.agency42.co/) from 0-1, which built social agents, digital twins, and AI characters for creators and brands. In late 2025, I joined Glean to work on enterprise AI deployments and strategy, before ultimately joining DeepMind in 2026.
 
-One of my core beliefs is that you should be pursuing an ever-growing list of side quests. This past year, I’ve been learning to do **AI research**. I’m particularly interested in the framings of **machine psychology** and **cybernetics** applied to multi-agent systems. As a proponent of open source, I try to publish my [thoughts](https://kenneth.computer/blog/) and [code](https://github.com/k3nnethfrancis) when I can. Most recently, I built [**Carla**](https://x.com/local0ptimist/status/2104604636095373674?s=20) as a tool for experimenting with base models.
-
-If you're exploring similar ideas and would like to connect, the best place to find me is on [X](https://x.com/local0ptimist)
-
-— **local0ptimist**
+One of my core beliefs is that you should be pursuing an ever-growing list of side quests. This past year, I’ve been learning to do **AI research**. I’m particularly interested in the framings of **machine psychology** and **cybernetics** applied to multi-agent systems. As a proponent of open source, I try to publish my [thoughts](https://kenneth.computer/blog/) and [code](https://github.com/k3nnethfrancis) when I can.
 
 ---
 
