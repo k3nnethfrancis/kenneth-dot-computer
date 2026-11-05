@@ -1,7 +1,7 @@
 ---
 title: kenneth.computer
 created: 2026-08-06T16:31:56.507Z
-modified: 2026-10-21T04:04:55.330Z
+modified: 2026-11-05T05:45:37.417Z
 ---
 
 <style>
@@ -72,17 +72,13 @@ I didn’t last long in academia. In 2021, I moved to California to work for Spa
 
 During that time, I got into building software. In 2024, I left to focus full-time on applied AI. Over the following year, my team and I bootstrapped an [**AI product and consulting studio**](https://www.agency42.co/) from 0-1, which built social agents, digital twins, and AI characters for creators and brands. In late 2025, I joined Glean to work on enterprise AI deployments and strategy, before ultimately joining DeepMind in 2026.
 
-One of my core beliefs is that you should be pursuing an ever-growing list of side quests. This past year, I’ve been learning to do [**AI research**](https://kenneth.computer/research/). I’m particularly interested in the framings of [**machine psychology**](https://kenneth.computer/research/notes/machine-psychology) and [**cybernetics**](https://kenneth.computer/research/notes/cybernetics) applied to multi-agent systems. As a proponent of open source, I try to publish my [thoughts](https://kenneth.computer/blog/) and [code](https://github.com/k3nnethfrancis) when I can. Most recently, I built [**Carla**](https://x.com/local0ptimist/status/2104604636095373674?s=20) as a tool for experimenting with base models.
+One of my core beliefs is that you should be pursuing an ever-growing list of side quests. This past year, I’ve been learning to do **AI research**. I’m particularly interested in the framings of **machine psychology** and **cybernetics** applied to multi-agent systems. As a proponent of open source, I try to publish my [thoughts](https://kenneth.computer/blog/) and [code](https://github.com/k3nnethfrancis) when I can. Most recently, I built [**Carla**](https://x.com/local0ptimist/status/2104604636095373674?s=20) as a tool for experimenting with base models.
 
 If you're exploring similar ideas and would like to connect, the best place to find me is on [X](https://x.com/local0ptimist)
 
 — **local0ptimist**
 
 ---
-
-## <a href="research/artifacts/technical-reports" aria-label="Technical Reports" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg></a> **Technical Reports**
-
-- [Multi-judge behavioral evaluation of GLM-5](<research/artifacts/technical-reports/glm5-multi-judge-behavioral-eval.md>)
 
 ## <a href="blog/index.md" aria-label="Blog" class="blog-icon-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: inline; vertical-align: middle; margin-right: 8px;"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg></a> **Selected Posts**
 

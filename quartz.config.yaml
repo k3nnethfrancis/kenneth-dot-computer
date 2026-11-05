@@ -245,7 +245,7 @@ plugins:
   - source: "@quartz-community/recent-notes"
     enabled: false
   - source: ./plugins/recent-notes
-    enabled: true
+    enabled: false
     options:
       title: Recent Logs
       limit: 3
@@ -259,7 +259,7 @@ plugins:
       display: desktop-only
       condition: index
   - source: ./plugins/recent-notes
-    enabled: true
+    enabled: false
     options:
       title: Recent Notes
       limit: 3
